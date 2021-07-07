@@ -1,3 +1,74 @@
+
+/******************** CONTENU GENERAL *****************************/
+
 body{
     color:#000000;
+    font-family:'Raleway',sans-serif;
 }
+
+
+/******************** CONTENU HEADER ******************************/
+#Menu{
+    background-color:#f2f2f2;
+    color: #0065fc, /* Problème affichage */
+}
+
+
+
+/******************** CONTENU SECTION 1 - RECHERCHE ***************/
+
+
+/******************** CONTENU SECTION 2 - FILTRES *****************/
+
+
+
+/******************** CONTENU SECTION 3 - INFO ********************/
+
+
+
+/******************** CONTENU SECTION 4 - RESULTATS RECHERCHE *****/
+.ResultatsDeRecherche{
+    background-color:#f2f2f2 ;
+}
+
+
+
+
+/******************** CONTENU SECTION 5 - PLUS POPULAIRES *********/
+.Populaire{
+    background-color:#f2f2f2 ;
+}
+
+
+/******************** CONTENU SECTION 6 - ACTIVITES ***************/
+
+
+
+/******************** CONTENU FOOTER ******************************/
+
+footer{
+    background-color:#f2f2f2;
+}
+
+
+/************************* ICONES *********************************/
+
+.fa-solid fa-info{
+    position:absolute;
+}
+
+.fa-solid fa-star{
+    position:absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************** MEDIAS ***********************/
