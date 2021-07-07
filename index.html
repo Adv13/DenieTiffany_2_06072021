@@ -2,6 +2,9 @@
 
 <html>
     <head>
+
+        <meta charset="utf-8">
+
         <title>Reservia</title>
         <meta name="description" content="Trouvez facilement votre hébergement pour des vacances de rêve !"/>
 
@@ -23,23 +26,377 @@
         <!-- Style -->
         <link rel="stylesheet" media="screen" type="text/css" title="style" href="assets/css/styles.css"/>
 
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/2ac2bd5913.js" crossorigin="anonymous"></script>
+
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+        <!-- Responsive part -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </head>
 
     <body>
 
+
+
         <!-- Header -->
-        <header></header>
+        <header>
+            <div id="LogoContainer">
+                <img src="assets/imgs/logo/Reservia.svg">
+            </div>
+            <div id="Menu">
+                <h4>Hébergements</h4>
+                <h4>Activités</h4>
+                <h4>S'inscrire</h4>
+            </div>
 
-        <!-- Section 1 - Recherche & Filtres -->
 
-        <!-- Section 2 - Resultats -->
+        </header>
 
-        <!-- Section 3 - Les plus populaires -->
 
-        <!-- Section 4 - Activités de la ville -->
+
+        <!-- Section 1 - Recherche -->
+        <section class="Recherche">
+            <div class="Recherche_input">
+
+                <h2>Trouvez votre hébergement pour des vacances de rêve !</h2>
+                <p>En plein centre ville ou en pleine nature.</p>
+
+            </div>
+            <div id="SearchButton">
+
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Marseille, France" name="search">
+                    <button type="submit"><p class="fa fa-search">Rechercher</p></button>
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Section 2 - Filtres -->
+        <section class="Filtres">
+            <div id="Filtre_part">
+
+                <p>Filtres</p>
+                <input type=button onclick=window.location.href="#"; value="Économique">
+                <input type=button onclick=window.location.href="#"; value="Familial">
+                <input type=button onclick=window.location.href="#"; value="Romantique">
+                <input type=button onclick=window.location.href="#"; value="Animaux autorisés">
+
+            </div>
+
+        </section>
+
+        
+
+        <!-- Section 3 - Info -->
+        <section class="Info">
+
+            <div id="info_text">
+
+                <i class="fas fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+            </div>
+
+        </section>
+
+
+        
+        <!-- Section 4 - Resultats -->
+        <section class="ResultatsDeRecherche">
+            <div id="Resultats_recherche">
+
+                <div id="Title_resultat">
+                    <h2>Hébergements à Marseille</h2>
+                </div>
+
+                <div class="Resultats">
+                    <div class="imgs_resultats_recherche">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_recherche">
+                        <h4>Auberge de la Cannebière</h4>
+                    </div>
+                   <div class="Text_resultats_recherche">
+                        <p>Nuit à partir de 25€</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <!-- Problème d'affichage -->
+                        <i class="fa-solid fa-star-sharp"></i> <!-- Problème d'affichage -->
+                         <a href="#4" title="Donner 4 étoiles">☆</a>
+                         <a href="#3" title="Donner 3 étoiles">☆</a>
+                         <a href="#2" title="Donner 2 étoiles">☆</a>
+                         <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                <div class="Resultats">
+                    <div class="imgs_resultats_recherche">
+                        <img src="#">
+                     </div>
+                     <div class="titre_vignette_resultats_recherche">
+                        <h4>Hôtel du port</h4>
+                    </div>
+                    <div class="Text_resultats_recherche">
+                        <p>Nuit à partir de 52€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                <div class="Resultats">
+                    <div class="imgs_resultats_recherche">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_recherche">
+                        <h4>Hôtel Les mouettes</h4>
+                    </div>
+                    <div class="Text_resultats_recherche">
+                        <p>Nuit à partir de 76€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                <div class="Resultats">
+                    <div class="imgs_resultats_recherche">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_recherche">
+                        <h4>Hôtel de la mer</h4>
+                    </div>
+                    <div class="Text_resultats_recherche">
+                        <p>Nuit à partir de 46€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                <div class="Resultats">
+                    <div class="imgs_resultats_recherche">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_recherche">
+                        <h4>Auberge Le Panier</h4>
+                    </div>
+                    <div class="Text_resultats_recherche">
+                        <p>Nuit à partir de 23€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                <div class="Resultats">
+                    <div class="imgs_resultats_recherche">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_recherche">
+                        <h4>Hôtel chez Amina</h4>
+                    </div>
+                    <div class="Text_resultats_recherche">
+                        <p>Nuit à partir de 96€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                <p><strong>Afficher plus</strong></p>
+
+            </div>
+
+        </section>
+            
+
+
+        <!-- Section 5 - Les plus populaires -->
+        <section class="Populaire">
+
+            <div id="PlusPopulaires">
+
+                <div id="Titre_PlusPopulaires">
+                    <h2>Les plus populaires</h2>
+                </div>
+                <div id="Icon_stats">
+                    <img src="#">
+                </div>
+
+                <div class="Resultats_Populaires">
+                    <div class="imgs_resultats_populaires">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_populaires">
+                        <h4>Hôtel Le soleil du matin</h4>
+                    </div>
+                    <div class="Text_resultats_populaires">
+                        <p>Nuit à partir de 128€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                
+                <div class="Resultats_Populaires">
+                    <div class="imgs_resultats_populaires">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_populaires">
+                        <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                    </div>
+                    <div class="Text_resultats_populaires">
+                        <p>Nuit à partir de 71€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+                <div class="Resultats_Populaires">
+                    <div class="imgs_resultats_populaires">
+                        <img src="#">
+                    </div>
+                    <div class="titre_vignette_resultats_populaires">
+                        <h4>Hôtel Tout bleu et Blanc</h4>
+                    </div>
+                    <div class="Text_resultats_populaires">
+                        <p>Nuit à partir de 68€</p>
+                    </div>
+                    <div class="rating">
+                        <a href="#5" title="Donner 5 étoiles">☆</a>
+                        <a href="#4" title="Donner 4 étoiles">☆</a>
+                        <a href="#3" title="Donner 3 étoiles">☆</a>
+                        <a href="#2" title="Donner 2 étoiles">☆</a>
+                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Section 6 - Activités de la ville -->
+        <section class="Activites">
+            <div id="Activites">
+                <div class="Resultats_activites">
+                    <div class="imgs_activites">
+                        <img src="#">
+                    </div>
+                    <div class="titre_activites">
+                        <h4>Vieux Port</h4>
+                    </div>
+                </div>
+                <div class="Resultats_activites">
+                    <div class="imgs_activites">
+                        <img src="#">
+                    </div>
+                    <div class="titre_activites">
+                        <h4>Fort de Pomègues</h4>
+                    </div>
+                </div>
+                <div class="Resultats_activites">
+                    <div class="imgs_activites">
+                        <img src="#">
+                    </div>
+                    <div class="titre_activites">
+                        <h4>Îles du Frioul</h4>
+                    </div>
+                </div>
+                <div class="Resultats_activites">
+                    <div class="imgs_activites">
+                        <img src="#">
+                    </div>
+                    <div class="titre_activites">
+                        <h4>Parc National des Calanques</h4>
+                    </div>
+                </div>
+                <div class="Resultats_activites">
+                    <div class="imgs_activites">
+                        <img src="#">
+                    </div>
+                    <div class="titre_activites">
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </div>
+                </div>
+                <div class="Resultats_activites">
+                    <div class="imgs_activites">
+                        <img src="#">
+                    </div>
+                    <div class="titre_activites">
+                        <h4>Parc Longchamp</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
 
         <!-- Footer -->
-        <footer></footer>
+        <footer>
+            <div id="A_propos">
+                <div class="titre_footer">
+                    <h4>A propos</h4>
+                </div>
+                <div class="Text_footer">
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales de vente</a>
+                    <a href="#">Données et confidentialité</a>
+                </div>
+            </div>
+            <div id="Nos_hebergements">
+                <div class="titre_footer">
+                    <h4>Nos hébergements</h4>
+                </div>
+                <div class="Text_footer">
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Soumettre votre hôtel</a>
+                </div>
+            </div>
+            <div id="Assistance">
+                <div class="titre_footer">
+                    <h4>Assistance</h4>
+                </div>
+                <div class="Text_footer">
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>
+                </div>
+            </div>
+        </footer>
 
 
 
