@@ -7,18 +7,48 @@ body{
     
 }
 
+.container{
+    display:flex; /* cf images même taille*/
+    /*flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;*/
+}
 
+a:link 
+{ 
+ text-decoration:none; 
+} 
 
-a:hover{
+#Menu ul{
+    list-style-type: none;
+    display: flex;
+    
+}
 
+#Menu li{
+    margin-right:40px;
 }
 
 /******************** CONTENU HEADER ******************************/
-#Menu{
-    background-color:#f2f2f2;
-    color: #0065fc; /* Problème affichage */
+
+.LogoContainer{
+    float:left;
 }
 
+#Menu{
+    background-color:#ffffff;
+    color: #0065fc; 
+    position:absolute;
+    right: 0px;
+    top:0px;
+    Margin:auto;
+
+}
+
+#Menu a:hover{
+
+    color: #303030;
+}
 
 
 /******************** CONTENU SECTION 1 - RECHERCHE ***************/
@@ -43,6 +73,15 @@ a:hover{
 
 #Activites{
     clear:both;
+    display:flex; /* cf images même taille*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Resultats_activites{
+    width:50px;
+    height:50px;
 }
 
 /******************** CONTENU FOOTER ******************************/
@@ -232,17 +271,17 @@ footer{
 
 .ResultatsDeRecherche{
     display:flex; /* cf images même taille*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-around;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color:#f2f2f2;
     border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
-    width:65%;
-    height:400px;
+    width:60%;
+    height:420px;
     float:left;
     margin:auto;
 
-    padding-left:30px;
-    padding-right:10px;
+    padding-left:40px;
+    padding-right:-10px;
     margin-bottom:10px;
     position:center;
 
@@ -265,7 +304,7 @@ footer{
     background-color:#ffffff;
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     width:25%;
-    height:30%;
+    height:15%;
     float:left;
     margin:auto;
     padding-left:2px;
@@ -329,12 +368,12 @@ footer{
     /******************** CONTENU SECTION 5 - PLUS POPULAIRES *********/
 .Populaire{
     display:flex; /* cf images même taille*/
-    flex-wrap: wrap;
     background-color:#960e0e ;
     border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
     width:30%;
     height:400px;
     margin-left:75%;
+    margin:auto;
     
 
 }
