@@ -1,255 +1,272 @@
 
-/******************** CONTENU GENERAL *****************************/
-
-body{
-    color:#000000;
-    font-family:'Raleway',sans-serif;
+header{
     
 }
 
-.container{
-    display:flex; /* cf images même taille*/
-    /*flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;*/
+#LogoContainer{
+    float:left;
+    padding-bottom:30px;
 }
 
-a:link 
-{ 
- text-decoration:none; 
-} 
+#Menu{
+    position:absolute;
+    right: 0px;
+    top:0px;
+    Margin:auto;
+}
+
+#Menu a:hover{
+    color: #0065fc;
+    border-width:4px;
+    border-color:#0065fc;
+    border-style:solid;
+    padding-top:13px;
+    border-right:none;
+    border-bottom:none;
+    border-left:none;
+}
 
 #Menu ul{
-    list-style-type: none;
     display: flex;
-    
 }
 
 #Menu li{
     margin-right:40px;
 }
 
-/******************** CONTENU HEADER ******************************/
-
-.LogoContainer{
-    float:left;
-}
-
-#Menu{
-    background-color:#ffffff;
-    color: #0065fc; 
-    position:absolute;
-    right: 0px;
-    top:0px;
-    Margin:auto;
-
-}
-
-#Menu a:hover{
-
-    color: #303030;
+#Sinscrire{
+    color:#0065fc;
+    font-weight: bold;
 }
 
 
-/******************** CONTENU SECTION 1 - RECHERCHE ***************/
-
-
-/******************** CONTENU SECTION 2 - FILTRES *****************/
 
 
 
-/******************** CONTENU SECTION 3 - INFO ********************/
+body{
+    font-family:'Raleway',sans-serif;
+    color:#303030;
+}
+
+a:link { 
+    text-decoration:none; 
+    color:#303030;
+} 
+
+a:visited{
+    color:#303030;
+}
+
+ul{
+    list-style-type:none;
+}
+
+h2{
+    font-weight:bold;
+    font-size:1em;
+}
+
+h3{
+    font-size:1em;
+    font-weight:bold;;
+}
+
+p{
+    font-size:0.8em;
+    color:#404040;
+}
 
 
 
 
 
-
-
-
-
-
-/******************** CONTENU SECTION 6 - ACTIVITES ***************/
-
-#Activites{
+#container01{
     clear:both;
+    margin-left:20px;
+}
+
+#Recherche{
+
+}
+
+#SearchButton i{
+    float:left;
+    background-color:#f2f2f2;
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    border-radius:1.5vmin 0vmin 0vmin 1.5vmin;
+}
+
+#button{
+    float:left;
+    background-color: #0065fc;
+    color:#ffffff;
+    width:100px;
+    height:33px;
+    border-radius:0vmin 1.5vmin 1.5vmin 0vmin;
+    border:none;
+    vertical-align: middle;/* à corriger plus tard*/
+}
+
+#SearchButton h6{
+    font-size:0.4em;
+    text-align: center; /* à corriger plus tard*/
+
+}
+
+#SearchButton input{
+    float:left;
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom:5px;
+    padding-left:10px;
+    border-color:#f2f2f2; /* à corriger plus tard*/
+    border-width:0.5px; /* à corriger plus tard*/
+    font-weight:bold;
+  
+}
+
+#SearchButton{
+    margin-bottom:20px;
+}
+
+#Filtres{
+    padding-top:15px;
+    clear:both;
+}
+
+#Filtres i{
+    color:#0065fc;
+    border-radius: 50%;/* à corriger plus tard*/
+    border-width:10px;/* à corriger plus tard*/
+    background:#deebff;/* à corriger plus tard*/
+    width: 28px;
+    height: 20px;
+    padding-top:8px; /*à améliorer*/
+    margin-left:10px;
+    text-align: center;
+    position:relative;
+}
+
+#Filtres input{
+    
+    background-color:#ffffff;
+    width:150px;
+    height:30px;
+    border-radius:0vmin 3vmin 3vmin 0vmin;
+    border:solid;
+    border-width:0.5px;
+    border-color:#f2f2f2;
+    text-align: center;
+    font-weight: bold;
+    margin-left:-15px;
+    padding-left:20px;
+
+}
+
+#Info{
+    font-size:0.8em;
+    color:#404040;
+}
+#Info i{
+    border-radius: 50%;/* à corriger plus tard*/
+    border-width:10px;/* à corriger plus tard*/
+    border-color:#a01c1c;/* à corriger plus tard*/
+    width: 10px;
+    height: 10px;
+    color:#0065fc;
+}
+
+
+
+
+
+#container02{
+    margin-left:20px;
+}
+
+#ResultatsDeRecherche{
+    float:left;
+    background-color:#f2f2f2;
+    border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
+    max-width:65%;
+    height:420px;
+    margin-right:20px;
+    overflow: hidden;
+}
+
+#Title_resultat{
+    margin-left:25px;
+    margin-bottom:5px;
+}
+
+#orga_resultats_recherche{
     display:flex; /* cf images même taille*/
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.Resultats_activites{
-    width:50px;
-    height:50px;
-}
-
-/******************** CONTENU FOOTER ******************************/
-
-footer{
-    background-color:#f2f2f2;
-}
-
-#A_propos{
-    float:left;
-}
-
-#Nos_hebergements{
-    float:left;
-}
-#Assistance{
-    float:left;
-}
-
-.titre_footer{
+    overflow: hidden;
+    padding-bottom:30px;
     
 }
 
-.Text_footer{
+.Resultats{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    width:25%;
+    height:15%;
+    margin-left:30px;
+    margin-top:20px;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     
 }
 
-
-/************************* ICONES *********************************/
-
-
-.fa-solid fa-info{
-    position:absolute;
+.imgs_resultats_recherche{
+    border-radius:2vmin 2vmin 0vmin 0vmin; /* pour rogner les bords*/
+    max-width:100%;
+    height:80px; 
+    padding-top:2px;
+    padding-left:2px;
+    padding-right:2px;
+    overflow: hidden;
 }
 
-.fa-solid fa-star{
-    position:absolute;
+#imgs01_resultat_recherche{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+   
+#imgs02_resultat_recherche{
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 
-
- 
-
-
-
-
-
-
-
-
-
-/********************** MEDIAS QUERIES***********************/
-
-/* X-Small devices (portrait phones, less than 576px)*/
-    /*@media (max-width: 575.98px) {*/
-
-/* Small devices (landscape phones, less than 768px)*/
-    @media (max-width: 767.98px) {
-
-    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
-    /* Images partie Hébergement Photo 01*/
-    .imgs01_resultat_recherche{
-        width: 100px;
-        background-image:url(assets/imgs/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash);
-        
-        }
-
-    /* Images partie Hébergement Photo 02*/
-    .imgs02_resultat_recherche{
-        width: 100px;
-        background-image:url(assets/imgs/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 03*/
-    .imgs03_resultat_recherche{
-        width: 100px;
-        background-image:url(assets/imgs/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 04*/
-    .imgs04_resultat_recherche{
-        width: 100px;
-        background-image:url(assets/imgs/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 05*/
-    .imgs05_resultat_recherche{
-        width: 100px;
-        background-image:url(assets/imgs/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 06*/
-    .imgs06_resultat_recherche{
-        width: 100px;
-        background-image:url(assets/imgs/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash);
-
-        }
-
-    }
-
-
-
-
-
-/* Medium devices (tablets, less than 992px)*/
-    @media (max-width: 991.98px) {
-
-    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
-    /* Images partie Hébergement Photo 01*/
-    .imgs01_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/3_Medium/marcus-loke-WQJvWU_HZFo-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 02*/
-    .imgs02_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 03*/
-    .imgs03_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 04*/
-    .imgs04_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 05*/
-    .imgs05_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 06*/
-    .imgs06_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash);
-
-        }
-
-    }
-
-
-
-
-
-/* Large devices (desktops, less than 1200px)*/
-    @media (max-width: 1199.98px) {
-    
-
-    /******************** CONTENU SECTION 4 - RESULTATS RECHERCHE *****/
-
-.Title_resultat{
-    margin-left:15px;
+#imgs03_resultat_recherche{
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
+
+#imgs04_resultat_recherche{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#imgs05_resultat_recherche{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#imgs06_resultat_recherche{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
 
 .titre_vignette_resultats_recherche{
     font-size:0.7em;
@@ -257,221 +274,244 @@ footer{
     margin-left:7px;
 }
 
-.Text_resultats_recherche{
-    font-size:0.5em;
+.text_resultats_recherche{
+    font-size:0.6em;
     margin-top:-12px;
     margin-left:7px;
 }
 
-.rating{
-    font-size:0.7em;
-    margin-top:-8px;
+.rating_recherche{
+    font-size:0.5em;
+    margin-top:-4px;
+    margin-bottom:4px;
     margin-left:7px;
 }
 
-.ResultatsDeRecherche{
-    display:flex; /* cf images même taille*/
-    flex-wrap: wrap;
-    justify-content: space-around;
+#ResultatsDeRecherche i{
+    color:#0065fc;
+}
+
+#gris01{
+    color:#f2f2f2; /* à retravailler*/
+}
+
+#afficherPlus{
+    clear:both;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+
+
+#PlusPopulaires{
     background-color:#f2f2f2;
     border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
-    width:60%;
+    max-width:30%;
     height:420px;
-    float:left;
-    margin:auto;
-
-    padding-left:40px;
-    padding-right:-10px;
-    margin-bottom:10px;
-    position:center;
-
+    overflow: hidden;
 }
 
-.imgs_resultats_recherche{
-    border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-    width:100%;
-    height:57%;
-    padding-top:-10px;
-    margin-right:auto;
-    margin-left:auto;
-    overflow: hidden;
+#populaire_titre_icon{
+    display:flex; /* cf images même taille*/
+    margin-left:25px;
+    margin-top:10px;
+}
+
+#PlusPopulaires i{
+    color:#0065fc;
+}
+
+#titre_PlusPopulaires{
     
 }
 
+#icon_stat{
+    margin-left:55px;
+    color:#404040; /*a retravailler car couleur pas affichee*/
+}
 
-   
-.Resultats{
+.Resultats_Populaires{
     background-color:#ffffff;
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    width:25%;
-    height:15%;
-    float:left;
-    margin:auto;
-    padding-left:2px;
-    padding-right:2px;
-    padding-top:2px;
-    margin-right:20px;
-    margin-top:1px;
-    margin-bottom:25px;
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    position:center;
-    
-}
-
-.afficherPlus{
-    clear:both;
-}
-
-
-    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
-    /* Images partie Hébergement Photo 01*/
-    .imgs01_resultat_recherche{
-        background-image:url(assets/imgs/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash);
-        
-        }
-
-    /* Images partie Hébergement Photo 02*/
-    .imgs02_resultat_recherche{
-        background-image:url(assets/imgs/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash);
-        
-        }
-
-    /* Images partie Hébergement Photo 03*/
-    .imgs03_resultat_recherche{
-        background-image:url(assets/imgs/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 04*/
-    .imgs04_resultat_recherche{
-        background-image:url(assets/imgs/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 05*/
-    .imgs05_resultat_recherche{
-        background-image:url(assets/imgs/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 06*/
-    .imgs06_resultat_recherche{
-        background-image:url(assets/imgs/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash);
-
-        }
-
-    }
-
-
-
-
-    /******************** CONTENU SECTION 5 - PLUS POPULAIRES *********/
-.Populaire{
-    display:flex; /* cf images même taille*/
-    background-color:#960e0e ;
-    border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
-    width:30%;
-    height:400px;
-    margin-left:75%;
+    display:flex;
+    flex-direction:column;
+    max-width:80%;
+    height:100px;
     margin:auto;
-    
-
-}
-
-.Resultats_populaires{
-    background-color:#ffffff;
-    float:left;
-    width:5%;
-    height:50px;
-    margin:auto;
-    margin-left:1px;
-    padding-left:50px;
-    
-}
-
-.Titre_PlusPopulaires{
-    
-
+    margin-bottom:20px;
+    margin-top:1px;
 }
 
 .imgs_resultats_populaires{
-    display:flex; /* cf images même taille*/
-    width:35%;
+    padding-top:2px;
+    padding-left:2px;
+    padding-bottom:2px;
+    max-width:35%;
     height:100px;
+    object-fit: cover;
+    float:left;
+    /*overflow: hidden;*/
+}
+
+#imgs01_resultat_populaire{
     border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    padding-bottom:10px;
-    margin-bottom:10px;
-    position:center;
-    overflow: hidden;
+    max-width:100%;
+    height:96px;
+    object-fit: cover;
+}
+
+#imgs02_resultat_populaire{
+    border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
+    max-width:100%;
+    height:96px;
+    object-fit: cover;
+}
+
+#imgs03_resultat_populaire{
+    border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
+    max-width:100%;
+    height:96px;
+    object-fit: cover;
 }
 
 .titre_vignette_resultats_populaires{
-
     font-size:0.7em;
+    margin-left:90px;
+    margin-top:-110px;
+}
+
+.text_resultats_populaires{
+    font-size:0.6em;
+    margin-left:90px;
+    margin-top:-20px;
+}
+
+.rating_populaires{
+    font-size:0.5em;
+    margin-left:90px;
+    margin-top:25px;
+}
+
+
+
+
+
+#container03{
+    margin-left:20px;
+}
+
+#Activites{
+
+}
+
+#Titre_activites{
+    margin-top:40px;
+}
+
+#Groupe_activites{
+    display:flex; /* cf images même taille*/
+    flex-wrap: wrap;
+    float:left;
+}
+
+.Resultats_activites{
+    width:150px;
+    height:150px;
+}
+
+.imgs_activites{
+    width:100px;
+    height:100px;
+    overflow: hidden;
+}
+
+#imgs01_activites{
+
+}
+
+#imgs02_activites{
+
+}
+
+#imgs03_activites{
+
+}
+
+#imgs04_activites{
+
+}
+
+#imgs05_activites{
+
+}
+
+#imgs06_activites{
+    
+}
+
+.titre_activites{
+
+}
+
+
+
+
+
+footer{
+    clear:both;
+    background-color:#f2f2f2;
+    display:flex;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    max-width: 100%;
+    height:120px;
+}
+
+#A_propos{
+    float:left;
+    display:flex;
+    flex-direction:column;
+    margin-left:-8px;
+}
+
+#titre_apropos{
+    display:flex;
+    flex-direction:column;
+}
+
+#Nos_hebergements{
+    float:left;
+    display:flex;
+    flex-direction:column;
+    margin-left:150px;
+}
+
+#titre_hebergement{
+    display:flex;
+    flex-direction:column;
+}
+
+#Assistance{
+    float:left;
+    display:flex;
+    flex-direction:column;
+    margin-left:200px;
+}
+
+#titre_assistance{
+    display:flex;
+    flex-direction:column;
+}
+
+.titre_footer{
+    margin-left:30px;
+    font-size:0.7em;
+}
+
+.text_footer{
     margin-top:-10px;
-    margin-left:7px;
-
+    margin-left:-10px;
+    font-size:0.5em;
 }
-
-.Text_resultats_populaires{
-
-    font-size:0.7em;
-    margin-top:-12px;
-    margin-left:7px;
-
-
-}
-
-
-
-
-
-
-/* X-Large devices (large desktops, less than 1400px)*/
-    @media (max-width: 1399.98px) {
-
-    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
-    /* Images partie Hébergement Photo 01*/
-    .imgs01_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 02*/
-    .imgs02_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 03*/
-    .imgs03_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 04*/
-    .imgs04_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 05*/
-    .imgs05_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash);
-
-        }
-
-    /* Images partie Hébergement Photo 06*/
-    .imgs06_resultat_recherche{
-        width: 200px;
-        background-image:url(assets/imgs/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash);
-
-        }
-
- }

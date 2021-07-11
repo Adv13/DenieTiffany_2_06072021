@@ -50,61 +50,55 @@
                 <ul>
                     <li><a href="#" class="text_bleu_menu">Hébergement</a></li>
                     <li><a href="#">Activités</a></li>
-                    <li><a href="#" class="text_bleu_menu">S'inscrire</a></li>
+                    <li><a href="#" id="Sinscrire">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
 
 
 
-        <!-- Section 1 - Recherche -->
-        <section class="Recherche">
-            <div class="Recherche_input">
 
+
+        <div id="container01">
+        <!-- Section 1 - Recherche -->
+        <section id="Recherche">
                 <h2>Trouvez votre hébergement pour des vacances de rêve !</h2>
                 <p>En plein centre ville ou en pleine nature.</p>
-
-            </div>
-
             <div id="SearchButton">
+                <p><i class="fas fa-map-marker-alt"></i></p>
                 <form class="example" action="action_page.php">
                     <input type="text" placeholder="Marseille, France" name="search">
-                    <button type="submit"><p class="fa fa-search">Rechercher</p></button>
+                    <button type="submit"id="button"><h6>Rechercher</h6></button>
                 </form>
             </div>
         </section>
 
-
-
         <!-- Section 2 - Filtres -->
-        <section class="Filtres">
-            <div id="Filtre_part">
-
-                <p>Filtres 
-                <input type=button onclick=window.location.href="#"; value="Économique">
-                <input type=button onclick=window.location.href="#"; value="Familial">
-                <input type=button onclick=window.location.href="#"; value="Romantique">
-                <input type=button onclick=window.location.href="#"; value="Animaux autorisés"></p>
-
-            </div>
-
+        <section id="Filtres">
+                <h5>Filtres   
+                <i class="fas fa-money-bill-wave"></i><input type=button onclick=window.location.href="#"; value="Économique">
+                <i class="fas fa-child"></i><input type=button onclick=window.location.href="#"; value="Familial">
+                <i class="fas fa-heart"></i><input type=button onclick=window.location.href="#"; value="Romantique">
+                <i class="fas fa-dog"></i><input type=button onclick=window.location.href="#"; value="Animaux autorisés"></h5>
         </section>
-
-        
 
         <!-- Section 3 - Info -->
-        <section class="Info">
-                <p></p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        <section id="Info">
+                <p></p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
+        </div>
 
 
-        <div class="container">
+
+
+
+        <div id="container02">
         <!-- Section 4 - Resultats -->
         <section id="ResultatsDeRecherche">
             
-                <h3 id="Title_resultat" class="Titres">Hébergements à Marseille</h3>
+                <h3 id="Title_resultat">Hébergements à Marseille</h3>
 
-                <div id="OrganisationResultatsRecherche">
+                <div id="orga_resultats_recherche">
                 <div class="Resultats">
                     <div class="imgs_resultats_recherche">
                         <img src="assets/imgs/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"id="imgs01_resultat_recherche">
@@ -112,16 +106,15 @@
                     <div class="titre_vignette_resultats_recherche">
                         <h4>Auberge la Cannebière</h4>
                     </div>
-                    <div class="Text_resultats_recherche">
+                    <div class="text_resultats_recherche">
                         <p>Nuit à partir de 25€</p>
                     </div>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i> <!-- Problème d'affichage -->
-                        <i class="fa-solid fa-star-sharp"></i> <!-- Problème d'affichage -->
-                         <a href="#4" title="Donner 4 étoiles">☆</a>
-                         <a href="#3" title="Donner 3 étoiles">☆</a>
-                         <a href="#2" title="Donner 2 étoiles">☆</a>
-                         <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_recherche">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" id="gris01"></i> <!--A retravailler plus tard pour la couleur-->
                     </div>
                 </div>
 
@@ -132,15 +125,15 @@
                      <div class="titre_vignette_resultats_recherche">
                         <h4>Hôtel du port</h4>
                     </div>
-                    <div class="Text_resultats_recherche">
+                    <div class="text_resultats_recherche">
                         <p>Nuit à partir de 52€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_recherche">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
 
@@ -151,15 +144,15 @@
                     <div class="titre_vignette_resultats_recherche">
                         <h4>Hôtel Les mouettes</h4>
                     </div>
-                    <div class="Text_resultats_recherche">
+                    <div class="text_resultats_recherche">
                         <p>Nuit à partir de 76€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_recherche">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
 
@@ -170,15 +163,15 @@
                     <div class="titre_vignette_resultats_recherche">
                         <h4>Hôtel de la mer</h4>
                     </div>
-                    <div class="Text_resultats_recherche">
+                    <div class="text_resultats_recherche">
                         <p>Nuit à partir de 46€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_recherche">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
 
@@ -189,15 +182,15 @@
                     <div class="titre_vignette_resultats_recherche">
                         <h4>Auberge Le Panier</h4>
                     </div>
-                    <div class="Text_resultats_recherche">
+                    <div class="text_resultats_recherche">
                         <p>Nuit à partir de 23€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_recherche">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
 
@@ -208,19 +201,19 @@
                     <div class="titre_vignette_resultats_recherche">
                         <h4>Hôtel chez Amina</h4>
                     </div>
-                    <div class="Text_resultats_recherche">
+                    <div class="text_resultats_recherche">
                         <p>Nuit à partir de 96€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_recherche">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
                 </div>
-                <a href="#" class="afficherPlus"><strong>Afficher plus</strong></a>
+                <a href="#" id="afficherPlus">Afficher plus</a>
 
         </section>
             
@@ -229,8 +222,9 @@
         <!-- Section 5 - Les plus populaires -->
         <section id="PlusPopulaires">
                 
-                <div class="Populaire_titre_icon">
-                    <h3 id="Titre_PlusPopulaires" class="Titres">Les plus populaires <i class="fas fa-info-circle"></i></h3>
+                <div id="populaire_titre_icon">
+                    <h3 id="pitre_PlusPopulaires" class="Titres">Les plus populaires</h3>
+                    <p id="icon_stat"><i class="fas fa-chart-line"></i></p>
                     <!-- trouver la bonne icone plus tard-->
                 </div>
 
@@ -241,15 +235,15 @@
                     <div class="titre_vignette_resultats_populaires">
                         <h4>Hôtel Le soleil du matin</h4>
                     </div>
-                    <div class="Text_resultats_populaires">
+                    <div class="text_resultats_populaires">
                         <p>Nuit à partir de 128€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_populaires">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
                 
@@ -260,15 +254,15 @@
                     <div class="titre_vignette_resultats_populaires">
                         <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                     </div>
-                    <div class="Text_resultats_populaires">
+                    <div class="text_resultats_populaires">
                         <p>Nuit à partir de 71€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_populaires">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
 
@@ -279,15 +273,15 @@
                     <div class="titre_vignette_resultats_populaires">
                         <h4>Hôtel Tout bleu et Blanc</h4>
                     </div>
-                    <div class="Text_resultats_populaires">
+                    <div class="text_resultats_populaires">
                         <p>Nuit à partir de 68€</p>
                     </div>
-                    <div class="rating">
-                        <a href="#5" title="Donner 5 étoiles">☆</a>
-                        <a href="#4" title="Donner 4 étoiles">☆</a>
-                        <a href="#3" title="Donner 3 étoiles">☆</a>
-                        <a href="#2" title="Donner 2 étoiles">☆</a>
-                        <a href="#1" title="Donner 1 étoile">☆</a>
+                    <div class="rating_populaires">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
@@ -296,6 +290,7 @@
     </div>
 
 
+        <div id="container03">
         <!-- Section 6 - Activités de la ville -->
         <section id="Activites">
 
@@ -353,7 +348,7 @@
                 </div>
             </div>
         </section>
-
+        </div>
 
 
         <!-- Footer -->
@@ -362,7 +357,7 @@
                 <div class="titre_footer">
                     <h4 id="titre_apropos"><strong>A propos</strong></h4>
                 </div>
-                <div class="Text_footer">
+                <div class="text_footer">
                 <ul>
                    <li><a href="#">Fonctionnement du site</a></li><br>
                    <li><a href="#">Conditions générales de vente</a></li><br>
@@ -375,7 +370,7 @@
                 <div class="titre_footer">
                     <h4 id="titre_hebergement"><strong>Nos hébergements</strong></h4>
                 </div>
-                <div class="Text_footer">
+                <div class="text_footer">
                 <ul>
                    <li><a href="#">Charte qualité</a></li><br> 
                    <li><a href="#">Soumettre votre hôtel</a></li> 
@@ -387,7 +382,7 @@
                 <div class="titre_footer">
                     <h4 id="titre_assistance"><strong>Assistance</strong></h4>
                 </div>
-                <div class="Text_footer">
+                <div class="text_footer">
                 <ul>
                     <li><a href="#">Centre d'aide</a></li><br>
                     <li><a href="#">Nous contacter</a></li>
