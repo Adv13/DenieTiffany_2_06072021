@@ -6,13 +6,15 @@ header{
 #LogoContainer{
     float:left;
     padding-bottom:30px;
+    margin-left:20px;
+    margin-top:10px;
 }
 
 #Menu{
     position:absolute;
-    right: 0px;
+    right:0px;
     top:0px;
-    Margin:auto;
+   
 }
 
 #Menu a:hover{
@@ -77,7 +79,17 @@ p{
 }
 
 
-
+#Main{
+    width: 100vw; 
+    height: 95.25vw; /* 100/56.25 = 1.778 mais je veux que ca reste collé en haut*/
+    background:transparent;
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /*vertical center */
+    left:0;right:0; /* horizontal center */
+}
 
 
 #container01{
@@ -139,15 +151,19 @@ p{
 
 #Filtres i{
     color:#0065fc;
-    border-radius: 50%;/* à corriger plus tard*/
-    border-width:10px;/* à corriger plus tard*/
-    background:#deebff;/* à corriger plus tard*/
+    border-radius: 50%;/* à corriger plus tard si besoin*/
+    border-width:10px;/* à corriger plus tard si besoin*/
+    background:#deebff;
     width: 28px;
     height: 20px;
     padding-top:8px; /*à améliorer*/
     margin-left:10px;
     text-align: center;
     position:relative;
+}
+
+#Filtres input:hover{
+    background:#deebff;
 }
 
 #Filtres input{
@@ -198,8 +214,9 @@ p{
 }
 
 #Title_resultat{
+    padding-top:10px;
     margin-left:25px;
-    margin-bottom:5px;
+    margin-bottom:-2px;
 }
 
 #orga_resultats_recherche{
@@ -222,7 +239,7 @@ p{
 }
 
 .imgs_resultats_recherche{
-    border-radius:2vmin 2vmin 0vmin 0vmin; /* pour rogner les bords*/
+    border-radius:1.5vmin 1.5vmin 0vmin 0vmin; /* pour rogner les bords*/
     max-width:100%;
     height:80px; 
     padding-top:2px;
@@ -303,6 +320,8 @@ p{
 
 
 
+
+
 #PlusPopulaires{
     background-color:#f2f2f2;
     border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
@@ -313,6 +332,8 @@ p{
 
 #populaire_titre_icon{
     display:flex; /* cf images même taille*/
+    width:230px;
+    height:50px;
     margin-left:25px;
     margin-top:10px;
 }
@@ -326,71 +347,168 @@ p{
 }
 
 #icon_stat{
-    margin-left:55px;
+    margin-left:60px;
+    padding-top:5px;
     color:#404040; /*a retravailler car couleur pas affichee*/
 }
 
-.Resultats_Populaires{
+#orga_resultats_populaires{
+    max-width:100%;
+    height:350px;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+}
+
+.Resultats_Populaires01{
     background-color:#ffffff;
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    display:flex;
-    flex-direction:column;
     max-width:80%;
-    height:100px;
-    margin:auto;
+    height:90px;
+    margin-left:25px;
     margin-bottom:20px;
-    margin-top:1px;
+    margin-top:5px;
+    padding-left:2px;
+    padding-top:2px;
+    padding-bottom:2px;
+    display:flex;
+    overflow: hidden;
 }
 
-.imgs_resultats_populaires{
+.Resultats_Populaires02{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    max-width:80%;
+    height:90px;
+    margin-left:25px;
+    margin-bottom:20px;
+    margin-top:5px;
+    padding-left:2px;
+    padding-top:2px;
+    padding-bottom:2px;
+    display:flex;
+    overflow: hidden;
+}
+
+.Resultats_Populaires03{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    max-width:80%;
+    height:90px;
+    margin-left:25px;
+    margin-top:5px;
+    padding-left:2px;
+    padding-top:2px;
+    padding-bottom:2px;
+    display:flex;
+    overflow: hidden;
+}
+
+/*
+.imgs_resultats_populaires02{
+    background-size:100% 100%;
+    position:relative;
     padding-top:2px;
     padding-left:2px;
     padding-bottom:2px;
     max-width:35%;
     height:100px;
-    object-fit: cover;
+   /* object-fit: cover;
     float:left;
-    /*overflow: hidden;*/
+    overflow: hidden;
+}
+*/
+
+.imgs_resultats_populaires01{
+    border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
+    max-width:100%;
+    height:100px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.groupe-text_populaire01{
+    max-width:90%;
+    height:110px;
+    margin-right:50px;
+    padding-left:15px;
+    overflow: hidden;
 }
 
 #imgs01_resultat_populaire{
-    border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
+    border-radius:0.5vmin 0vmin 0vmin 0.5vmin; /* pour rogner les bords*/
     max-width:100%;
-    height:96px;
+    height:90px;
     object-fit: cover;
 }
 
-#imgs02_resultat_populaire{
+.imgs_resultats_populaires02{
     border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
     max-width:100%;
-    height:96px;
+    height:100px;
     object-fit: cover;
+    overflow: hidden;
+}
+
+.groupe-text_populaire02{
+    max-width:90%;
+    height:110px;
+    margin-right:50px;
+    padding-left:15px;
+    overflow: hidden;
+}
+
+#imgs02_resultat_populaire{
+    border-radius:0.5vmin 0vmin 0vmin 0.5vmin; /* pour rogner les bords*/
+    max-width:100%;
+    height:90px;
+    object-fit: cover;
+}
+
+.imgs_resultats_populaires03{
+    border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
+    max-width:100%;
+    height:100px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.groupe-text_populaire03{
+    max-width:90%;
+    height:86px;
+    margin-right:50px;
+    padding-left:15px;
+    overflow: hidden;
+    
 }
 
 #imgs03_resultat_populaire{
     border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
     max-width:100%;
-    height:96px;
+    height:90px;
     object-fit: cover;
 }
 
 .titre_vignette_resultats_populaires{
     font-size:0.7em;
-    margin-left:90px;
-    margin-top:-110px;
+    margin-top:-10px;
+
 }
 
 .text_resultats_populaires{
     font-size:0.6em;
-    margin-left:90px;
-    margin-top:-20px;
+    margin-bottom:25px;
+    margin-top:-10px;
+
 }
 
 .rating_populaires{
     font-size:0.5em;
-    margin-left:90px;
-    margin-top:25px;
+    margin-top:-5px;
+
 }
 
 
@@ -407,51 +525,154 @@ p{
 
 #Titre_activites{
     margin-top:40px;
+    margin-bottom:-15px;
 }
 
 #Groupe_activites{
     display:flex; /* cf images même taille*/
     flex-wrap: wrap;
+    justify-content: space-around;
     float:left;
+    margin-left:-25px;
+    /*align-items: center;*/
+    /*text-align: center;*/
 }
 
-.Resultats_activites{
-    width:150px;
-    height:150px;
-}
-
-.imgs_activites{
-    width:100px;
-    height:100px;
+.grp_activites01{
+    display:flex; /* cf images même taille*/
+    flex-wrap: wrap;
     overflow: hidden;
+    float:left;
+    max-width:55%;
+    height:400px;
+}
+
+.grp_activites02{
+    display:flex; /* cf images même taille*/
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-width:50%;
+    height:400px;
+}
+
+.Resultats_activites01{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:200px;
+    height:310px;
+    margin-top:30px;
+    margin-left:30px;
+    margin-bottom:40px;
+    margin-right:20px;
+}
+
+.Resultats_activites02{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:200px;
+    height:160px;
+    margin-left:10px;
+}
+
+#imgs06{
+    position:absolute;
+    margin-left: 260px;
+    margin-top: 180px;
+    margin-bottom:40px;
+}
+
+#col_02_activites{
+    margin-top:30px;
+}
+
+#imgs02{
+    margin-left:10px;
+}
+
+#imgs03{
+    margin-top:10px;
+}
+
+.Resultats_activites03{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:200px;
+    height:120px;
+    margin-top:30px;
+    margin-left:20px;
+    margin-bottom:40px;
+}
+
+.imgs_activites01{
+    border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+    overflow: hidden;
+    max-width:100%;
+    height:270px;
+}
+
+.imgs_activites02{
+    border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+    overflow: hidden;
+    max-width:100%;
+    height:120px;
+}
+
+.imgs_activites03{
+    border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+    overflow: hidden;
+    max-width:100%;
+    height:85px;
 }
 
 #imgs01_activites{
-
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #imgs02_activites{
-
+    width:100%;
+    height:120px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #imgs03_activites{
-
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #imgs04_activites{
-
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #imgs05_activites{
-
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #imgs06_activites{
-    
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .titre_activites{
-
+    font-size:0.6em;
+    font-weight:bold;
+    padding-left:10px;
 }
 
 
@@ -513,5 +734,5 @@ footer{
 .text_footer{
     margin-top:-10px;
     margin-left:-10px;
-    font-size:0.5em;
+    font-size:0.6em;
 }
