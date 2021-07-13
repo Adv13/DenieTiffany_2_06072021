@@ -1,5 +1,7 @@
 
 header{
+    display:flex;
+    justify-content: space-between;
     
 }
 
@@ -8,13 +10,6 @@ header{
     padding-bottom:30px;
     margin-left:20px;
     margin-top:10px;
-}
-
-#Menu{
-    position:absolute;
-    right:0px;
-    top:0px;
-   
 }
 
 #Menu a:hover{
@@ -95,6 +90,9 @@ p{
 #container01{
     clear:both;
     margin-left:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #Recherche{
@@ -200,7 +198,8 @@ p{
 
 
 #container02{
-    margin-left:20px;
+    display:flex;
+    justify-content: center;
 }
 
 #ResultatsDeRecherche{
@@ -226,6 +225,7 @@ p{
 #orga_resultats_recherche{
     display:flex; /* cf images même taille*/
     flex-wrap: wrap;
+    justify-content: center;
     overflow: hidden;
     padding-bottom:30px;
     
@@ -236,7 +236,7 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     width:25%;
     height:15%;
-    margin-left:30px;
+    margin-left:20px;
     margin-top:20px;
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     
@@ -540,7 +540,8 @@ p{
 
 
 #container03{
-    margin-left:20px;
+    display:flex;
+    justify-content: center;
 }
 
 #Activites{
@@ -1105,7 +1106,10 @@ footer{
         /********************************************************************/
         /************************* AJUSTEMENT CONTENU ***********************/
         /********************************************************************/
-  
+        #container01{
+            display:flex;
+            justify-content: center;
+        }
 
         /********************************************************************/
         /**************************** Recherche *****************************/
@@ -1323,7 +1327,7 @@ footer{
         #Titre_activites{
             margin-top:40px;
             margin-bottom:-15px;
-            margin-left:85px;
+            margin-left:25px;
         }
             
         #Groupe_activites{
@@ -1331,7 +1335,6 @@ footer{
             flex-wrap: wrap;
             justify-content: space-around;
             float:left;
-            margin-left:55px;
             /*align-items: center;*/
             /*text-align: center;*/
         }
@@ -1343,7 +1346,6 @@ footer{
             float:left;
             max-width:55%;
             height:600px;
-            margin-left:25px;
         }
             
         .grp_activites02{
@@ -1361,7 +1363,7 @@ footer{
             width:250px;
             height:500px;
             margin-top:30px;
-            margin-left:30px;
+            margin-left:10px;
             margin-bottom:40px;
             margin-right:20px;
         }
@@ -1377,7 +1379,7 @@ footer{
             
         #imgs06{
             position:absolute;
-            margin-left: 300px;
+            margin-left: 280px;
             margin-top: 280px;
             margin-bottom:20px;
         }
