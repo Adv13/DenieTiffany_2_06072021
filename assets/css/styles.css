@@ -88,15 +88,19 @@ p{
 
 
 #container01{
-    clear:both;
     margin-left:20px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #Recherche{
 
+}
+
+#SearchButton{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #SearchButton i{
@@ -106,6 +110,7 @@ p{
     padding-right:10px;
     padding-bottom:10px;
     padding-left:10px;
+    margin-top:-13px;
     border-radius:1.5vmin 0vmin 0vmin 1.5vmin;
 }
 
@@ -117,11 +122,11 @@ p{
     height:33px;
     border-radius:0vmin 1.5vmin 1.5vmin 0vmin;
     border:none;
-    vertical-align: middle;/* à corriger plus tard*/
 }
 
 #SearchButton h6{
-    font-size:0.4em;
+    margin-bottom:20px;
+    font-size:0.5em;
     text-align: center; /* à corriger plus tard*/
 
 }
@@ -133,18 +138,14 @@ p{
     padding-bottom:5px;
     padding-left:10px;
     border-color:#f2f2f2; /* à corriger plus tard*/
-    border-width:0.5px; /* à corriger plus tard*/
+    border-width:0.2px; /* à corriger plus tard*/
     font-weight:bold;
-  
-}
-
-#SearchButton{
-    margin-bottom:20px;
 }
 
 #Filtres{
-    padding-top:15px;
-    clear:both;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #Filtres i{
@@ -154,10 +155,16 @@ p{
     background:#deebff;
     width: 28px;
     height: 21px;
-    padding-top:7px; /*à améliorer*/
+    padding-top:8px; /*à améliorer*/
     margin-left:10px;
     text-align: center;
     position:relative;
+}
+
+.filtre{
+    display:flex;
+    flex-direction: row;
+    padding-top:15px;
 }
 
 #Filtres input:hover{
@@ -171,18 +178,19 @@ p{
     height:30px;
     border-radius:0vmin 3vmin 3vmin 0vmin;
     border:solid;
-    border-width:0.5px;
+    border-width:3px;
     border-color:#f2f2f2;
     text-align: center;
     font-weight: bold;
     margin-left:-15px;
-    padding-left:20px;
+    padding-left:15px;
 
 }
 
 #Info{
     font-size:0.8em;
     color:#404040;
+    margin-bottom:20px;
 }
 #Info i{
     border-radius: 50%;/* à corriger plus tard*/
@@ -203,7 +211,6 @@ p{
 }
 
 #ResultatsDeRecherche{
-    float:left;
     background-color:#f2f2f2;
     border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
     max-width:65%;
@@ -218,7 +225,7 @@ p{
 
 #Title_resultat{
     padding-top:10px;
-    margin-left:25px;
+    margin-left:45px;
     margin-bottom:-2px;
 }
 
@@ -236,7 +243,8 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     width:25%;
     height:15%;
-    margin-left:20px;
+    margin-left:15px;
+    margin-right:15px;
     margin-top:20px;
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     
@@ -318,8 +326,7 @@ p{
 
 #afficherPlus{
     border-radius:1.5vmin 1.5vmin 1.5vmin 1.5vmin;
-    clear:both;
-    margin-left:25px;
+    margin-left:30px;
     padding-top:5px;
     padding-right:8px;
     padding-bottom:5px;
@@ -354,16 +361,14 @@ p{
 }
 
 #titre_PlusPopulaires{
-    max-width:60%;
-    height:15px;
     margin-top:20px;
-    margin-left:20px;
+    margin-left:25px;
 }
 
 #icon_stat{
-    margin-right:20px;
+    margin-right:25px;
     max-width: 20%;
-    padding-top:5px;
+    padding-top:10px;
     color:#404040; /*a retravailler car couleur pas affichee*/
 }
 
@@ -545,7 +550,7 @@ p{
 }
 
 #Activites{
-
+    
 }
 
 #Titre_activites{
@@ -554,82 +559,76 @@ p{
 }
 
 #Groupe_activites{
-    display:flex; /* cf images même taille*/
-    flex-wrap: wrap;
-    justify-content: space-around;
-    float:left;
-    margin-left:-25px;
-    /*align-items: center;*/
-    /*text-align: center;*/
-}
-
-.grp_activites01{
-    display:flex; /* cf images même taille*/
-    flex-wrap: wrap;
-    overflow: hidden;
-    float:left;
-    max-width:55%;
+    max-width:100%;
     height:400px;
+    margin-top:30px;
+    display:grid;
+    grid-gap:2em;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-areas:
+    "content01 content02 content04 content05"
+    "content01 content02 content04 content06"
+    "content01 content03 content04 content06"
 }
 
-.grp_activites02{
-    display:flex; /* cf images même taille*/
-    flex-wrap: wrap;
-    overflow: hidden;
-    max-width:50%;
-    height:400px;
-}
-
-.Resultats_activites01{
+#Resultats_activites01{
     background-color:#ffffff;
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:200px;
     height:310px;
-    margin-top:30px;
-    margin-left:30px;
-    margin-bottom:40px;
-    margin-right:20px;
+    grid-area:content01;
 }
 
-.Resultats_activites02{
+#Groupe_activites a:hover{
+    background:#deebff;
+}
+
+#Resultats_activites02{
     background-color:#ffffff;
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:200px;
     height:160px;
-    margin-left:10px;
+    grid-area:content02;
 }
 
-#imgs06{
-    position:absolute;
-    margin-left: 252px;
-    margin-top: 180px;
-    margin-bottom:40px;
-}
-
-#col_02_activites{
-    margin-top:12px;
-  
-}
-
-#imgs02{
-    margin-left:30px;
-}
-
-#imgs03{
-    margin-top:10px;
-}
-
-.Resultats_activites03{
+#Resultats_activites03{
     background-color:#ffffff;
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:200px;
     height:120px;
-    margin-top:30px;
-    margin-left:10px;
-    margin-bottom:40px;
+    grid-area:content03;
+    margin-bottom: 55px;
+}
+
+#Resultats_activites04{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:200px;
+    height:310px;
+    grid-area:content04;
+}
+
+#Resultats_activites05{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:200px;
+    height:120px;
+    grid-area:content05;
+}
+
+#Resultats_activites06{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:200px;
+    height:160px;
+    grid-area:content06;
 }
 
 .imgs_activites01{
@@ -651,6 +650,13 @@ p{
     overflow: hidden;
     max-width:100%;
     height:85px;
+}
+
+.imgs_activites06{
+    border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+    overflow: hidden;
+    max-width:100%;
+    height:120px;
 }
 
 #imgs01_activites{
@@ -683,14 +689,12 @@ p{
 
 #imgs05_activites{
     width:100%;
-    height:100%;
     object-fit: cover;
     overflow: hidden;
 }
 
 #imgs06_activites{
     width:100%;
-    height:100%;
     object-fit: cover;
     overflow: hidden;
 }
@@ -706,12 +710,11 @@ p{
 
 
 footer{
-    clear:both;
     background-color:#f2f2f2;
     display:flex;
     flex-wrap: wrap;
     /*justify-content: space-around;*/
-    /*align-items: center;*/
+    align-items: center;
     max-width: 100%;
     height:120px;
 }
@@ -989,11 +992,173 @@ footer{
     
             } 
 
+/****************************************************************************/
+        /***************************** RECHERCHE ****************************/
+
+        #container01{
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+        }
+        /********************************************************************/
+        /***************************** ACTIVITES ****************************/
+        #Activites{
+         
+        }
+        
+        #Titre_activites{
+            margin-top:40px;
+            margin-bottom:-15px;
+        }
+        
+        #Groupe_activites{
+            max-width:100%;
+            height:400px;
+            margin-top:30px;
+            display:grid;
+            grid-gap:4em;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-areas:
+            "content01 content02 content04 content05"
+            "content01 content02 content04 content06"
+            "content01 content03 content04 content06"
+        }
+        
+        #Resultats_activites01{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:350px;
+            grid-area:content01;
+        }
+        
+        #Groupe_activites a:hover{
+            background:#deebff;
+        }
+        
+        #Resultats_activites02{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:180px;
+            grid-area:content02;
+        }
+        
+        #Resultats_activites03{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:115px;
+            grid-area:content03;
+            margin-top:-20px;
+        }
+        
+        #Resultats_activites04{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:350px;
+            grid-area:content04;
+        }
+        
+        #Resultats_activites05{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:130px;
+            grid-area:content05;
+        }
+        
+        #Resultats_activites06{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:160px;
+            grid-area:content06;
+        }
+        
+        .imgs_activites01{
+            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+            overflow: hidden;
+            max-width:100%;
+            height:310px;
+        }
+        
+        .imgs_activites02{
+            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+            overflow: hidden;
+            max-width:100%;
+            height:140px;
+        }
+        
+        .imgs_activites03{
+            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+            overflow: hidden;
+            max-width:100%;
+        
+        }
+        
+        .imgs_activites06{
+            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+            overflow: hidden;
+            max-width:100%;
+            height:120px;
+        }
+        
+        #imgs01_activites{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs02_activites{
+            width:100%;
+            height:140px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs03_activites{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs04_activites{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs05_activites{
+            width:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs06_activites{
+            width:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        .titre_activites{
+            font-size:0.6em;
+            font-weight:bold;
+            padding-left:10px;
+        }
+         
 }
-
-
-
-
 /************************************************************************/
 /* Large devices (desktops, less than 1200px)
     @media (max-width: 1199.98px) {
@@ -1108,7 +1273,7 @@ footer{
         /********************************************************************/
         #container01{
             display:flex;
-            justify-content: center;
+            justify-content:center;
         }
 
         /********************************************************************/
@@ -1324,112 +1489,177 @@ footer{
 
         /********************************************************************/
         /***************************** ACTIVITES ****************************/
+        #Activites{
+         
+        }
+        
         #Titre_activites{
             margin-top:40px;
             margin-bottom:-15px;
-            margin-left:25px;
         }
-            
+        
         #Groupe_activites{
-            display:flex; /* cf images même taille*/
-            flex-wrap: wrap;
-            justify-content: space-around;
-            float:left;
-            /*align-items: center;*/
-            /*text-align: center;*/
+            max-width:100%;
+            height:400px;
+            margin-top:30px;
+            display:grid;
+            grid-gap:4em;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-areas:
+            "content01 content02 content04 content05"
+            "content01 content02 content04 content06"
+            "content01 content03 content04 content06"
         }
-            
-        .grp_activites01{
-            display:flex; /* cf images même taille*/
-            flex-wrap: wrap;
-            overflow: hidden;
-            float:left;
-            max-width:55%;
-            height:600px;
-        }
-            
-        .grp_activites02{
-            display:flex; /* cf images même taille*/
-            flex-wrap: wrap;
-            overflow: hidden;
-            max-width:55%;
-            height:600px;
-        }
-            
-        .Resultats_activites01{
+        
+        #Resultats_activites01{
             background-color:#ffffff;
             border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:250px;
-            height:500px;
-            margin-top:30px;
-            margin-left:10px;
-            margin-bottom:40px;
-            margin-right:20px;
+            width:200px;
+            height:350px;
+            grid-area:content01;
         }
-            
-        .Resultats_activites02{
+        
+        #Groupe_activites a:hover{
+            background:#deebff;
+        }
+        
+        #Resultats_activites02{
             background-color:#ffffff;
             border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:300px;
-            height:250px;
-            margin-left:10px;
+            width:200px;
+            height:180px;
+            grid-area:content02;
         }
-            
-        #imgs06{
-            position:absolute;
-            margin-left: 280px;
-            margin-top: 280px;
-            margin-bottom:20px;
-        }
-            
-        #col_02_activites{
-            margin-top:12px;
-            margin-right:10px;
-        }
-            
-        #imgs02{
-            margin-left:30px;
-        }
-            
-        #imgs03{
-            margin-top:30px;
-        }
-            
-        .Resultats_activites03{
+        
+        #Resultats_activites03{
             background-color:#ffffff;
             border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:300px;
-            height:220px;
-            margin-top:30px;
-            margin-left:10px;
-            margin-bottom:40px;
+            width:200px;
+            height:115px;
+            grid-area:content03;
+            margin-top:-20px;
         }
-            
+        
+        #Resultats_activites04{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:350px;
+            grid-area:content04;
+        }
+        
+        #Resultats_activites05{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:130px;
+            grid-area:content05;
+        }
+        
+        #Resultats_activites06{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:200px;
+            height:160px;
+            grid-area:content06;
+        }
+        
         .imgs_activites01{
             border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
             overflow: hidden;
             max-width:100%;
-            height:460px;
+            height:310px;
         }
-            
+        
         .imgs_activites02{
             border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
             overflow: hidden;
             max-width:100%;
-            height:210px;
+            height:140px;
         }
-            
+        
         .imgs_activites03{
             border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
             overflow: hidden;
             max-width:100%;
-            height:180px;
-         }
-            
+        
+        }
+        
+        .imgs_activites06{
+            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+            overflow: hidden;
+            max-width:100%;
+            height:120px;
+        }
+        
+        #imgs01_activites{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs02_activites{
+            width:100%;
+            height:140px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs03_activites{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs04_activites{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs05_activites{
+            width:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        #imgs06_activites{
+            width:100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        .titre_activites{
+            font-size:0.6em;
+            font-weight:bold;
+            padding-left:10px;
+        }
+         
+         /************************************************************************/
+         /******************************* Footer *********************************/
 
+
+         footer{
+            clear:both;
+            background-color:#f2f2f2;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /*justify-content: space-around;*/
+            /*align-items: center;*/
+            max-width: 100%;
+            height:120px;
+        }
             
             
                        
