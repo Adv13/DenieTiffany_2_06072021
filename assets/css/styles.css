@@ -192,6 +192,7 @@ p{
     color:#404040;
     margin-bottom:20px;
 }
+
 #Info i{
     border-radius: 50%;/* à corriger plus tard*/
     border-width:10px;/* à corriger plus tard*/
@@ -555,7 +556,8 @@ p{
 
 #Titre_activites{
     margin-top:40px;
-    margin-bottom:-15px;
+    margin-bottom:15px;
+    margin-left:30px;
 }
 
 #Groupe_activites{
@@ -564,12 +566,16 @@ p{
     margin-top:30px;
     display:grid;
     grid-gap:2em;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 2fr;
     grid-template-areas:
-    "content01 content02 content04 content05"
-    "content01 content02 content04 content06"
-    "content01 content03 content04 content06"
+    "asidebar content01 content02 content04 content05"
+    "asidebar content01 content02 content04 content06"
+    "asidebar content01 content03 content04 content06"
+}
+
+#Groupe_activites a:hover{
+    background:#deebff;
 }
 
 #Resultats_activites01{
@@ -579,10 +585,6 @@ p{
     width:200px;
     height:310px;
     grid-area:content01;
-}
-
-#Groupe_activites a:hover{
-    background:#deebff;
 }
 
 #Resultats_activites02{
@@ -646,6 +648,13 @@ p{
 }
 
 .imgs_activites03{
+    border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+    overflow: hidden;
+    max-width:100%;
+    height:85px;
+}
+
+.imgs_activites05{
     border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
     overflow: hidden;
     max-width:100%;
@@ -885,6 +894,414 @@ footer{
     
         } 
 
+    #Main{
+        display:flex;
+        flex-direction:column;
+    }
+
+    header{
+        display:flex;
+        flex-direction: column;
+        border-width:1px;
+        border-color:#f2f2f2; 
+        border-style:solid;
+        border-right:none;
+        border-top:none;
+        border-left:none;   
+    }
+    
+    #Menu ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #Menu li{
+        margin-right:80px;
+    }
+
+    #Sinscrire{
+        position:absolute;
+        top:25px;
+        right:30px;
+        padding-left:20px;
+    }
+
+    #SearchButton h6{
+        margin-bottom:20px;
+        font-size:0.5em;
+        text-align: center; /* à corriger plus tard*/
+    
+    }
+
+    #Filtres{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #Filtres input{
+        background-color:#ffffff;
+        width:150px;
+        height:30px;
+        border-radius:0vmin 4vmin 4vmin 0vmin;
+        border:solid;
+        border-width:3px;
+        border-color:#f2f2f2;
+        text-align: center;
+        font-weight: bold;
+        margin-left:-15px;
+        padding-left:15px;
+    
+    }
+
+    #Info{
+        margin-top:20px;
+    }
+
+    #container02{
+        margin-bottom:20px;
+        display:flex;
+        flex-direction:column-reverse;
+    }
+
+    #ResultatsDeRecherche{
+        background-color:#ffffff;
+        border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
+        max-width:95%;
+        height:420px;
+        margin-top:20px;
+        margin:auto;
+        overflow: hidden;
+    }
+
+    #orga_resultats_recherche{
+        max-width:100%;
+        height:100%;
+        display:flex; /* cf images même taille*/
+        overflow: hidden;
+        
+    }
+
+    #Title_resultat{
+        padding-top:10px;
+        margin-left:15px;
+        margin-bottom:-2px;
+    }
+    
+    .Resultats{
+        display:flex;
+        flex-direction: column;
+        background-color:#ffffff;
+        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
+        width:95%;
+        height:45%;
+        margin:auto;
+        margin-top:20px;
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        
+    }
+    
+    .imgs_resultats_recherche{
+        border-radius:2vmin 2vmin 0vmin 0vmin; /* pour rogner les bords*/
+        max-width:100%;
+        height:120px; 
+        padding-top:none;
+        padding-right:none;
+        padding-left:none;
+        overflow: hidden;
+    }
+    
+    #imgs01_resultat_recherche{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+       
+    #imgs02_resultat_recherche{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    #imgs03_resultat_recherche{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    #imgs04_resultat_recherche{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    #imgs05_resultat_recherche{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    #imgs06_resultat_recherche{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    #PlusPopulaires{
+        background-color:#f2f2f2;
+        max-width:100%;
+        height:420px;
+        overflow: hidden;
+    }
+    #orga_resultats_populaires{
+        max-width:100%;
+        height:350px;
+        display:flex;
+        flex-direction:column;
+        overflow: hidden;
+    }
+
+    .Resultats_Populaires01{
+        background-color:#ffffff;
+        border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        max-width:85%;
+        height:90px;
+        margin-left:25px;
+        margin-bottom:20px;
+        margin-top:5px;
+        padding-left:2px;
+        padding-top:2px;
+        padding-bottom:2px;
+        display:flex;
+        overflow: hidden;
+    }
+    
+    .Resultats_Populaires02{
+        background-color:#ffffff;
+        border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        max-width:85%;
+        height:90px;
+        margin-left:25px;
+        margin-bottom:20px;
+        margin-top:5px;
+        padding-left:2px;
+        padding-top:2px;
+        padding-bottom:2px;
+        display:flex;
+        overflow: hidden;
+    }
+    
+    .Resultats_Populaires03{
+        background-color:#ffffff;
+        border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        max-width:85%;
+        height:90px;
+        margin-left:25px;
+        margin-top:5px;
+        padding-left:2px;
+        padding-top:2px;
+        padding-bottom:2px;
+        display:flex;
+        overflow: hidden;
+    }
+
+    #container03{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #Activites{
+        
+    }
+    
+    #Titre_activites{
+        margin-top:40px;
+        margin-bottom:15px;
+        margin-left:30px;
+    }
+    
+    #Groupe_activites{
+        max-width:100%;
+        height:100%;
+        margin-top:15px;
+        margin:auto;
+        margin-bottom:30px;
+        display:grid;
+        grid-gap:2em;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "content01"
+        "content02"
+        "content03"
+        "content04"
+        "content05"
+        "content06"
+    }
+
+
+    #Resultats_activites01{
+        background-color:#ffffff;
+        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        width:310px;
+        height:160px;
+        margin:auto;
+        grid-area:content01;
+    }
+    
+    #Resultats_activites02{
+        background-color:#ffffff;
+        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        width:310px;
+        height:160px;
+        margin:auto;
+        grid-area:content02;
+    }
+    
+    #Resultats_activites03{
+        background-color:#ffffff;
+        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        width:310px;
+        height:160px;
+        margin:auto;
+        grid-area:content03;
+    }
+    
+    #Resultats_activites04{
+        background-color:#ffffff;
+        border-radius:3vmin 3vmin 3vmin 3vmin;  /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        width:310px;
+        height:160px;
+        margin:auto;
+        grid-area:content04;
+    }
+    
+    #Resultats_activites05{
+        background-color:#ffffff;
+        border-radius:3vmin 3vmin 3vmin 3vmin;  /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        width:310px;
+        height:160px;
+        margin:auto;
+        grid-area:content05;
+    }
+    
+    #Resultats_activites06{
+        background-color:#ffffff;
+        border-radius:3vmin 3vmin 3vmin 3vmin;  /* pour rogner les bords*/
+        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+        width:310px;
+        height:160px;
+        margin:auto;
+        grid-area:content06;
+    }
+    
+    .imgs_activites01{
+        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+        overflow: hidden;
+        max-width:100%;
+        height:120px;
+    }
+    
+    .imgs_activites02{
+        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+        overflow: hidden;
+        max-width:100%;
+        height:120px;
+    }
+    
+    .imgs_activites03{
+        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+        overflow: hidden;
+        max-width:100%;
+        height:120px;
+    }
+    
+    .imgs_activites05{
+        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+        overflow: hidden;
+        max-width:100%;
+        height:120px;
+    }
+    
+    .imgs_activites06{
+        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+        overflow: hidden;
+        max-width:100%;
+        height:120px;
+    }
+    
+    #imgs01_activites{
+        width:100%;
+        height:120px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #imgs02_activites{
+        width:100%;
+        height:120px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #imgs03_activites{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #imgs04_activites{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #imgs05_activites{
+        width:100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #imgs06_activites{
+        width:100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    footer{
+        max-width: 100%;
+        height:300px;
+        background-color:#f2f2f2;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+  
+
+    }
+
+    #A_propos{
+        display:flex;
+        flex-direction:column;
+    }
+    #Nos_hebergements{
+        display:flex;
+        flex-direction:column;
+    }
+    #Assistance{
+        display:flex;
+        flex-direction:column;
+    }
+
 }
 
 
@@ -892,7 +1309,7 @@ footer{
 
 /************************************************************************/
 /* Medium devices (tablets, less than 992px)*/
-    @media (max-width: 991.98px) {
+    @media (min-width:768px) and (max-width: 991.98px) {
 
     /********************************************************************/
     /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
@@ -1003,12 +1420,14 @@ footer{
         /********************************************************************/
         /***************************** ACTIVITES ****************************/
         #Activites{
-         
+            max-width:100%;
+            height:500px;
+            margin:auto;
         }
         
         #Titre_activites{
             margin-top:40px;
-            margin-bottom:-15px;
+            margin-bottom:25px;
         }
         
         #Groupe_activites{
@@ -1016,13 +1435,13 @@ footer{
             height:400px;
             margin-top:30px;
             display:grid;
-            grid-gap:4em;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-gap:2em;
+            grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 0.4fr 1fr 1fr 1fr 2fr;
             grid-template-areas:
-            "content01 content02 content04 content05"
-            "content01 content02 content04 content06"
-            "content01 content03 content04 content06"
+            "asidebar content01 content02 content04 content05"
+            "asidebar content01 content02 content04 content06"
+            "asidebar content01 content03 content04 content06"
         }
         
         #Resultats_activites01{
@@ -1043,7 +1462,7 @@ footer{
             border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:200px;
-            height:180px;
+            height:200px;
             grid-area:content02;
         }
         
@@ -1054,7 +1473,7 @@ footer{
             width:200px;
             height:115px;
             grid-area:content03;
-            margin-top:-20px;
+            margin-top:20px;
         }
         
         #Resultats_activites04{
@@ -1071,7 +1490,7 @@ footer{
             border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:200px;
-            height:130px;
+            height:150px;
             grid-area:content05;
         }
         
@@ -1082,6 +1501,7 @@ footer{
             width:200px;
             height:160px;
             grid-area:content06;
+            margin-top:5px;
         }
         
         .imgs_activites01{
@@ -1095,13 +1515,22 @@ footer{
             border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
             overflow: hidden;
             max-width:100%;
-            height:140px;
+            height:160px;
         }
         
         .imgs_activites03{
             border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
             overflow: hidden;
             max-width:100%;
+            height:80px;
+        
+        }
+
+        .imgs_activites05{
+            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
+            overflow: hidden;
+            max-width:100%;
+            height:110px;
         
         }
         
@@ -1121,7 +1550,7 @@ footer{
         
         #imgs02_activites{
             width:100%;
-            height:140px;
+            height:160px;
             object-fit: cover;
             overflow: hidden;
         }
@@ -1156,6 +1585,29 @@ footer{
             font-size:0.6em;
             font-weight:bold;
             padding-left:10px;
+        }
+
+        #container03{
+            display:flex;
+            justify-content: center;
+        }
+        #Titre_activites{
+            margin-top:40px;
+            margin-bottom:15px;
+            margin-left:30px;
+        }
+        #Groupe_activites{
+            max-width:100%;
+            height:400px;
+            margin-top:30px;
+            display:grid;
+            grid-gap:2em;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 0.5fr 1fr 1fr 1fr 2fr;
+            grid-template-areas:
+            "asidebar content01 content02 content04 content05"
+            "asidebar content01 content02 content04 content06"
+            "asidebar content01 content03 content04 content06"
         }
          
 }
@@ -1495,21 +1947,23 @@ footer{
         
         #Titre_activites{
             margin-top:40px;
-            margin-bottom:-15px;
+            margin-bottom:35px;
+            margin-left:50px;
         }
         
         #Groupe_activites{
             max-width:100%;
             height:400px;
             margin-top:30px;
+            margin:auto;
             display:grid;
             grid-gap:4em;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr;
+            grid-template-columns:0.7fr 1fr 1fr 1fr 2fr;
             grid-template-areas:
-            "content01 content02 content04 content05"
-            "content01 content02 content04 content06"
-            "content01 content03 content04 content06"
+            "sidebar content01 content02 content04 content05"
+            "sidebar content01 content02 content04 content06"
+            "sidebar content01 content03 content04 content06"
         }
         
         #Resultats_activites01{
