@@ -194,16 +194,17 @@ p{
 }
 
 #Info i{
-    border-radius: 50%;/* à corriger plus tard*/
-    border-width:10px;/* à corriger plus tard*/
-    border-color:#a01c1c;/* à corriger plus tard*/
     width: 10px;
     height: 10px;
     color:#0065fc;
 }
 
 
-
+#info_icon{
+    border-radius: 50%;/* à corriger plus tard*/
+    border-width:10px;/* à corriger plus tard*/
+    border-color:#a01c1c;/* à corriger plus tard*/
+}
 
 
 #container02{
@@ -796,7 +797,7 @@ footer{
 
 /************************************************************************/       
 /* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
+@media (min-width:50px) and (max-width: 767.98px) {
 
     /********************************************************************/
     /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
@@ -1282,9 +1283,7 @@ footer{
         max-width: 100%;
         height:300px;
         background-color:#f2f2f2;
-        display:flex;
-        flex-direction:column;
-        justify-content: space-around;
+
   
 
     }
@@ -1296,10 +1295,13 @@ footer{
     #Nos_hebergements{
         display:flex;
         flex-direction:column;
+        margin-left:0px;
+        margin-top:-20px;
     }
     #Assistance{
         display:flex;
         flex-direction:column;
+        margin-left:-10px;
     }
 
 }
