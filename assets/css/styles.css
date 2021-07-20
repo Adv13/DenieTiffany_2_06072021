@@ -5,10 +5,14 @@ header{
     
 }
 
+#Main{
+    margin:auto;
+    margin-left:20px;
+}
+
 #LogoContainer{
     float:left;
-    padding-bottom:30px;
-    margin-left:20px;
+    padding-bottom:20px;
     margin-top:10px;
 }
 
@@ -17,7 +21,7 @@ header{
     border-width:4px;
     border-color:#0065fc;
     border-style:solid;
-    padding-top:13px;
+    padding-top:20px;
     border-right:none;
     border-bottom:none;
     border-left:none;
@@ -73,79 +77,73 @@ p{
     color:#404040;
 }
 
+.Titres{
+    margin-left:20px;
+}
 
+/*
 #Main{
     width: 100vw; 
-    height: 95.25vw; /* 100/56.25 = 1.778 mais je veux que ca reste collé en haut*/
+    height: 95.25vw; /* 100/56.25 = 1.778 mais je veux que ca reste collé en haut
     background:transparent;
     max-height: 100vh;
-    max-width: 177.78vh; /* 16/9 = 1.778 */
+    max-width: 177.78vh; /* 16/9 = 1.778
     margin: auto;
     position: absolute;
-    top:0;bottom:0; /*vertical center */
-    left:0;right:0; /* horizontal center */
-}
+    top:0;bottom:0; /*vertical center 
+    left:0;right:0; /* horizontal center
+}*/
 
 
-#container01{
-    margin-left:20px;
-    display:flex;
-    flex-direction: column;
-}
 
-#Recherche{
 
-}
 
 #SearchButton{
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
 }
 
 #SearchButton i{
-    float:left;
+
     background-color:#f2f2f2;
+    width:10px;
+    height:19px;
     padding-top:10px;
-    padding-right:10px;
+    padding-right:15px;
     padding-bottom:10px;
-    padding-left:10px;
-    margin-top:-13px;
+    padding-left:15px;
     border-radius:1.5vmin 0vmin 0vmin 1.5vmin;
 }
 
 #button{
-    float:left;
+
     background-color: #0065fc;
     color:#ffffff;
     width:100px;
-    height:33px;
+    height:38px;
+    margin-left:-10px;
+    font-weight: bold;
     border-radius:0vmin 1.5vmin 1.5vmin 0vmin;
     border:none;
 }
 
-#SearchButton h6{
-    margin-bottom:20px;
-    font-size:0.5em;
-    text-align: center; /* à corriger plus tard*/
-
-}
-
 #SearchButton input{
-    float:left;
     padding-top:10px;
-    padding-right:10px;
-    padding-bottom:5px;
+    padding-bottom:10px;
     padding-left:10px;
     border-color:#f2f2f2; /* à corriger plus tard*/
     border-width:0.2px; /* à corriger plus tard*/
     font-weight:bold;
 }
 
+
+
+
+
 #Filtres{
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding-top:10px;
+    margin-bottom:10px;
 }
 
 #Filtres i{
@@ -155,7 +153,7 @@ p{
     background:#deebff;
     width: 28px;
     height: 21px;
-    padding-top:8px; /*à améliorer*/
+    padding-top:8px;
     margin-left:10px;
     text-align: center;
     position:relative;
@@ -163,7 +161,6 @@ p{
 
 .filtre{
     display:flex;
-    flex-direction: row;
     padding-top:15px;
 }
 
@@ -187,37 +184,50 @@ p{
 
 }
 
+
+
+
+
 #Info{
+    display:flex;
     font-size:0.8em;
     color:#404040;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 #Info i{
     width: 10px;
     height: 10px;
+    margin-right:5px;
     color:#0065fc;
 }
 
+#Info p{
+    margin-top: 1px;
+    margin-left:2px;
+}
 
-#info_icon{
-    border-radius: 50%;/* à corriger plus tard*/
-    border-width:10px;/* à corriger plus tard*/
+#icon_info{
+    border-radius: 50%;
+    border-width:5px;
     border-color:#a01c1c;/* à corriger plus tard*/
 }
 
 
-#container02{
+
+
+
+#container{
     display:flex;
-    justify-content: center;
 }
 
 #ResultatsDeRecherche{
     background-color:#f2f2f2;
     border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
-    max-width:65%;
-    height:420px;
+    width:65%;
+    height:400px;
     margin-right:20px;
+    margin-bottom:20px;
     overflow: hidden;
 }
 
@@ -225,90 +235,96 @@ p{
     background-color:#deebff
 }
 
-#Title_resultat{
-    padding-top:10px;
-    margin-left:45px;
-    margin-bottom:-2px;
-}
-
-#orga_resultats_recherche{
-    display:flex; /* cf images même taille*/
+#grp_resultatsRE{
+    display:flex;
+    /*justify-content: space-around;*/
     flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
-    padding-bottom:30px;
-    
+    margin-left:10px;
+    margin:auto;
 }
 
 .Resultats{
+    display:inline-block;
     background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    width:25%;
-    height:15%;
-    margin-left:15px;
-    margin-right:15px;
-    margin-top:20px;
+    border-radius:1vmin 1vmin 1vmin 1vmin;
+    width:150px;
+    height:125px;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:15px;
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    
+    overflow: hidden;
 }
 
 .imgs_resultats_recherche{
-    border-radius:1.5vmin 1.5vmin 0vmin 0vmin; /* pour rogner les bords*/
-    max-width:100%;
-    height:80px; 
-    padding-top:2px;
-    padding-left:2px;
-    padding-right:2px;
+     /* pour rogner les bords*/
     overflow: hidden;
 }
 
 #imgs01_resultat_recherche{
-    width:100%;
-    height:100%;
+    width:146px;
+    height:70px;
+    border-radius:1vmin 1vmin 0vmin 0vmin;
+    padding-left:2px;
+    padding-top:2px;
     object-fit: cover;
 }
    
 #imgs02_resultat_recherche{
-    width:100%;
-    height:100%;
+    width:146px;
+    height:70px;
+    border-radius:1vmin 1vmin 0vmin 0vmin;
+    padding-left:2px;
+    padding-top:2px;
     object-fit: cover;
 }
 
 #imgs03_resultat_recherche{
-    width:100%;
-    height:100%;
+    width:146px;
+    height:70px;
+    border-radius:1vmin 1vmin 0vmin 0vmin;
+    padding-left:2px;
+    padding-top:2px;
     object-fit: cover;
 }
 
 #imgs04_resultat_recherche{
-    width:100%;
-    height:100%;
+    width:146px;
+    height:70px;
+    border-radius:1vmin 1vmin 0vmin 0vmin;
+    padding-left:2px;
+    padding-top:2px;
     object-fit: cover;
 }
 
 #imgs05_resultat_recherche{
-    width:100%;
-    height:100%;
+    width:146px;
+    height:70px;
+    border-radius:1vmin 1vmin 0vmin 0vmin;
+    padding-left:2px;
+    padding-top:2px;
     object-fit: cover;
 }
 
 #imgs06_resultat_recherche{
-    width:100%;
-    height:100%;
+    width:146px;
+    height:70px;
+    border-radius:1vmin 1vmin 0vmin 0vmin;
+    padding-left:2px;
+    padding-top:2px;
     object-fit: cover;
 }
 
-
-.titre_vignette_resultats_recherche{
-    font-size:0.7em;
-    margin-top:-10px;
-    margin-left:7px;
+.title_vignetteRE{
+    font-size:0.6em;
+    margin-top:5px;
+    margin-left:5px;
 }
 
-.text_resultats_recherche{
-    font-size:0.6em;
-    margin-top:-12px;
-    margin-left:7px;
+.text_vignetteRE{
+    font-size:0.5em;
+    margin-top:-10px;
+    margin-left:5px;
 }
 
 .rating_recherche{
@@ -318,17 +334,22 @@ p{
     margin-left:7px;
 }
 
-#ResultatsDeRecherche i{
+.blue{
     color:#0065fc;
 }
 
-#gris01{
-    color:#f2f2f2; /* à retravailler*/
+.grey{
+   color:#c7c7c7;
+}
+
+.black{
+    color:#303030;
 }
 
 #afficherPlus{
     border-radius:1.5vmin 1.5vmin 1.5vmin 1.5vmin;
-    margin-left:30px;
+    margin-left:10px;
+    margin-top:20px;
     padding-top:5px;
     padding-right:8px;
     padding-bottom:5px;
@@ -344,18 +365,22 @@ p{
     background-color:#f2f2f2;
     border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
     max-width:30%;
-    height:420px;
+    height:400px;
     overflow: hidden;
+}
+
+#grp_textPO{
+    display:flex;
+    justify-content: space-between;
+}
+
+.iconPO{
+    margin-left:30px;
 }
 
 #PlusPopulaires a:hover{
     background-color:#deebff
 }
-
-#PlusPopulaires i{
-    color:#0065fc;
-}
-
 
 #populaire_titre_icon{
     display:flex;
@@ -469,7 +494,7 @@ p{
 
 #imgs01_resultat_populaire{
     border-radius:0.5vmin 0vmin 0vmin 0.5vmin; /* pour rogner les bords*/
-    max-width:100%;
+    width:100px;
     height:90px;
     object-fit: cover;
 }
@@ -492,7 +517,7 @@ p{
 
 #imgs02_resultat_populaire{
     border-radius:0.5vmin 0vmin 0vmin 0.5vmin; /* pour rogner les bords*/
-    max-width:100%;
+    width:100px;
     height:90px;
     object-fit: cover;
 }
@@ -516,7 +541,7 @@ p{
 
 #imgs03_resultat_populaire{
     border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
-    max-width:100%;
+    max-width:100px;
     height:90px;
     object-fit: cover;
 }
@@ -895,414 +920,7 @@ footer{
     
         } 
 
-    #Main{
-        display:flex;
-        flex-direction:column;
-    }
 
-    header{
-        display:flex;
-        flex-direction: column;
-        border-width:1px;
-        border-color:#f2f2f2; 
-        border-style:solid;
-        border-right:none;
-        border-top:none;
-        border-left:none;   
-    }
-    
-    #Menu ul{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    #Menu li{
-        margin-right:80px;
-    }
-
-    #Sinscrire{
-        position:absolute;
-        top:25px;
-        right:30px;
-        padding-left:20px;
-    }
-
-    #SearchButton h6{
-        margin-bottom:20px;
-        font-size:0.5em;
-        text-align: center; /* à corriger plus tard*/
-    
-    }
-
-    #Filtres{
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    
-    #Filtres input{
-        background-color:#ffffff;
-        width:150px;
-        height:30px;
-        border-radius:0vmin 4vmin 4vmin 0vmin;
-        border:solid;
-        border-width:3px;
-        border-color:#f2f2f2;
-        text-align: center;
-        font-weight: bold;
-        margin-left:-15px;
-        padding-left:15px;
-    
-    }
-
-    #Info{
-        margin-top:20px;
-    }
-
-    #container02{
-        margin-bottom:20px;
-        display:flex;
-        flex-direction:column-reverse;
-    }
-
-    #ResultatsDeRecherche{
-        background-color:#ffffff;
-        border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
-        max-width:95%;
-        height:420px;
-        margin-top:20px;
-        margin:auto;
-        overflow: hidden;
-    }
-
-    #orga_resultats_recherche{
-        max-width:100%;
-        height:100%;
-        display:flex; /* cf images même taille*/
-        overflow: hidden;
-        
-    }
-
-    #Title_resultat{
-        padding-top:10px;
-        margin-left:15px;
-        margin-bottom:-2px;
-    }
-    
-    .Resultats{
-        display:flex;
-        flex-direction: column;
-        background-color:#ffffff;
-        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
-        width:95%;
-        height:45%;
-        margin:auto;
-        margin-top:20px;
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        
-    }
-    
-    .imgs_resultats_recherche{
-        border-radius:2vmin 2vmin 0vmin 0vmin; /* pour rogner les bords*/
-        max-width:100%;
-        height:120px; 
-        padding-top:none;
-        padding-right:none;
-        padding-left:none;
-        overflow: hidden;
-    }
-    
-    #imgs01_resultat_recherche{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-    }
-       
-    #imgs02_resultat_recherche{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-    }
-    
-    #imgs03_resultat_recherche{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-    }
-    
-    #imgs04_resultat_recherche{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-    }
-    
-    #imgs05_resultat_recherche{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-    }
-    #imgs06_resultat_recherche{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-    }
-
-    #PlusPopulaires{
-        background-color:#f2f2f2;
-        max-width:100%;
-        height:420px;
-        overflow: hidden;
-    }
-    #orga_resultats_populaires{
-        max-width:100%;
-        height:350px;
-        display:flex;
-        flex-direction:column;
-        overflow: hidden;
-    }
-
-    .Resultats_Populaires01{
-        background-color:#ffffff;
-        border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        max-width:85%;
-        height:90px;
-        margin-left:25px;
-        margin-bottom:20px;
-        margin-top:5px;
-        padding-left:2px;
-        padding-top:2px;
-        padding-bottom:2px;
-        display:flex;
-        overflow: hidden;
-    }
-    
-    .Resultats_Populaires02{
-        background-color:#ffffff;
-        border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        max-width:85%;
-        height:90px;
-        margin-left:25px;
-        margin-bottom:20px;
-        margin-top:5px;
-        padding-left:2px;
-        padding-top:2px;
-        padding-bottom:2px;
-        display:flex;
-        overflow: hidden;
-    }
-    
-    .Resultats_Populaires03{
-        background-color:#ffffff;
-        border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        max-width:85%;
-        height:90px;
-        margin-left:25px;
-        margin-top:5px;
-        padding-left:2px;
-        padding-top:2px;
-        padding-bottom:2px;
-        display:flex;
-        overflow: hidden;
-    }
-
-    #container03{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    #Activites{
-        
-    }
-    
-    #Titre_activites{
-        margin-top:40px;
-        margin-bottom:15px;
-        margin-left:30px;
-    }
-    
-    #Groupe_activites{
-        max-width:100%;
-        height:100%;
-        margin-top:15px;
-        margin:auto;
-        margin-bottom:30px;
-        display:grid;
-        grid-gap:2em;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "content01"
-        "content02"
-        "content03"
-        "content04"
-        "content05"
-        "content06"
-    }
-
-
-    #Resultats_activites01{
-        background-color:#ffffff;
-        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        width:310px;
-        height:160px;
-        margin:auto;
-        grid-area:content01;
-    }
-    
-    #Resultats_activites02{
-        background-color:#ffffff;
-        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        width:310px;
-        height:160px;
-        margin:auto;
-        grid-area:content02;
-    }
-    
-    #Resultats_activites03{
-        background-color:#ffffff;
-        border-radius:3vmin 3vmin 3vmin 3vmin; /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        width:310px;
-        height:160px;
-        margin:auto;
-        grid-area:content03;
-    }
-    
-    #Resultats_activites04{
-        background-color:#ffffff;
-        border-radius:3vmin 3vmin 3vmin 3vmin;  /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        width:310px;
-        height:160px;
-        margin:auto;
-        grid-area:content04;
-    }
-    
-    #Resultats_activites05{
-        background-color:#ffffff;
-        border-radius:3vmin 3vmin 3vmin 3vmin;  /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        width:310px;
-        height:160px;
-        margin:auto;
-        grid-area:content05;
-    }
-    
-    #Resultats_activites06{
-        background-color:#ffffff;
-        border-radius:3vmin 3vmin 3vmin 3vmin;  /* pour rogner les bords*/
-        box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-        width:310px;
-        height:160px;
-        margin:auto;
-        grid-area:content06;
-    }
-    
-    .imgs_activites01{
-        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-        overflow: hidden;
-        max-width:100%;
-        height:120px;
-    }
-    
-    .imgs_activites02{
-        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-        overflow: hidden;
-        max-width:100%;
-        height:120px;
-    }
-    
-    .imgs_activites03{
-        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-        overflow: hidden;
-        max-width:100%;
-        height:120px;
-    }
-    
-    .imgs_activites05{
-        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-        overflow: hidden;
-        max-width:100%;
-        height:120px;
-    }
-    
-    .imgs_activites06{
-        border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-        overflow: hidden;
-        max-width:100%;
-        height:120px;
-    }
-    
-    #imgs01_activites{
-        width:100%;
-        height:120px;
-        object-fit: cover;
-        overflow: hidden;
-    }
-    
-    #imgs02_activites{
-        width:100%;
-        height:120px;
-        object-fit: cover;
-        overflow: hidden;
-    }
-    
-    #imgs03_activites{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-    
-    #imgs04_activites{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-    
-    #imgs05_activites{
-        width:100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-    
-    #imgs06_activites{
-        width:100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-    footer{
-        max-width: 100%;
-        height:300px;
-        background-color:#f2f2f2;
-
-  
-
-    }
-
-    #A_propos{
-        display:flex;
-        flex-direction:column;
-    }
-    #Nos_hebergements{
-        display:flex;
-        flex-direction:column;
-        margin-left:0px;
-        margin-top:-20px;
-    }
-    #Assistance{
-        display:flex;
-        flex-direction:column;
-        margin-left:-10px;
-    }
 
 }
 
@@ -1411,208 +1029,20 @@ footer{
     
             } 
 
-/****************************************************************************/
+
+}
+        /********************************************************************/
         /***************************** RECHERCHE ****************************/
 
-        #container01{
-            display:flex;
-            flex-direction: column;
-            justify-content:center;
-        }
+
         /********************************************************************/
         /***************************** ACTIVITES ****************************/
         #Activites{
-            max-width:100%;
-            height:500px;
-            margin:auto;
-        }
-        
-        #Titre_activites{
-            margin-top:40px;
-            margin-bottom:25px;
-        }
-        
-        #Groupe_activites{
-            max-width:100%;
-            height:400px;
-            margin-top:30px;
-            display:grid;
-            grid-gap:2em;
-            grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr;
-            grid-template-columns: 0.4fr 1fr 1fr 1fr 2fr;
-            grid-template-areas:
-            "asidebar content01 content02 content04 content05"
-            "asidebar content01 content02 content04 content06"
-            "asidebar content01 content03 content04 content06"
-        }
-        
-        #Resultats_activites01{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:350px;
-            grid-area:content01;
-        }
-        
-        #Groupe_activites a:hover{
-            background:#deebff;
-        }
-        
-        #Resultats_activites02{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:200px;
-            grid-area:content02;
-        }
-        
-        #Resultats_activites03{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:115px;
-            grid-area:content03;
-            margin-top:20px;
-        }
-        
-        #Resultats_activites04{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:350px;
-            grid-area:content04;
-        }
-        
-        #Resultats_activites05{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:150px;
-            grid-area:content05;
-        }
-        
-        #Resultats_activites06{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:160px;
-            grid-area:content06;
-            margin-top:5px;
-        }
-        
-        .imgs_activites01{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:310px;
-        }
-        
-        .imgs_activites02{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:160px;
-        }
-        
-        .imgs_activites03{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:80px;
-        
+
         }
 
-        .imgs_activites05{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:110px;
-        
-        }
-        
-        .imgs_activites06{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:120px;
-        }
-        
-        #imgs01_activites{
-            width:100%;
-            height:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs02_activites{
-            width:100%;
-            height:160px;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs03_activites{
-            width:100%;
-            height:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs04_activites{
-            width:100%;
-            height:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs05_activites{
-            width:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs06_activites{
-            width:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        .titre_activites{
-            font-size:0.6em;
-            font-weight:bold;
-            padding-left:10px;
-        }
-
-        #container03{
-            display:flex;
-            justify-content: center;
-        }
-        #Titre_activites{
-            margin-top:40px;
-            margin-bottom:15px;
-            margin-left:30px;
-        }
-        #Groupe_activites{
-            max-width:100%;
-            height:400px;
-            margin-top:30px;
-            display:grid;
-            grid-gap:2em;
-            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
-            grid-template-columns: 0.5fr 1fr 1fr 1fr 2fr;
-            grid-template-areas:
-            "asidebar content01 content02 content04 content05"
-            "asidebar content01 content02 content04 content06"
-            "asidebar content01 content03 content04 content06"
-        }
          
-}
+
 /************************************************************************/
 /* Large devices (desktops, less than 1200px)
     @media (max-width: 1199.98px) {
@@ -1722,13 +1152,11 @@ footer{
             }  
 
 
+
         /********************************************************************/
         /************************* AJUSTEMENT CONTENU ***********************/
         /********************************************************************/
-        #container01{
-            display:flex;
-            justify-content:center;
-        }
+
 
         /********************************************************************/
         /**************************** Recherche *****************************/
@@ -1739,205 +1167,6 @@ footer{
         /********************************************************************/
         /**************************** Populaires ****************************/
 
-        #PlusPopulaires{
-            background-color:#f2f2f2;
-            border-radius:2vmin 2vmin 2vmin 2vmin; /* pour rogner les bords*/
-            max-width:30%;
-            height:420px;
-            overflow: hidden;
-        }
-        
-        #PlusPopulaires i{
-            color:#0065fc;
-        }
-        
-
-        #populaire_titre_icon{
-            display:flex;
-            justify-content: space-between;
-        }
-        
-        #titre_PlusPopulaires{
-            max-width:60%;
-            height:15px;
-            margin-top:20px;
-            margin-left:20px;
-        }
-        
-        #icon_stat{
-            margin-right:20px;
-            max-width: 20%;
-            padding-top:5px;
-            color:#404040; /*a retravailler car couleur pas affichee*/
-        }
-        
-        #orga_resultats_populaires{
-            max-width:100%;
-            height:350px;
-            display:flex;
-            flex-direction:column;
-            overflow: hidden;
-        }
-        
-        /*#Link_resultat01_populaire{
-            max-width:100%;
-            height:94px;
-            display:block; 
-            cursor : pointer;
-            background-color:transparent;
-        }*/
-        
-        .Resultats_Populaires01{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            max-width:60%;
-            height:90px;
-            margin-left:85px;
-            margin-bottom:20px;
-            margin-top:10px;
-            padding-left:2px;
-            padding-top:2px;
-            padding-bottom:2px;
-            display:flex;
-            overflow: hidden;
-        }
-        
-        .Resultats_Populaires02{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            max-width:60%;
-            height:90px;
-            margin-left:85px;
-            margin-bottom:20px;
-            margin-top:5px;
-            padding-left:2px;
-            padding-top:2px;
-            padding-bottom:2px;
-            display:flex;
-            overflow: hidden;
-        }
-        
-        .Resultats_Populaires03{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            max-width:60%;
-            height:90px;
-            margin-left:85px;
-            margin-top:5px;
-            padding-left:2px;
-            padding-top:2px;
-            padding-bottom:2px;
-            display:flex;
-            overflow: hidden;
-        }
-        
-        /*
-        .imgs_resultats_populaires02{
-            background-size:100% 100%;
-            position:relative;
-            padding-top:2px;
-            padding-left:2px;
-            padding-bottom:2px;
-            max-width:35%;
-            height:100px;
-           /* object-fit: cover;
-            float:left;
-            overflow: hidden;
-        }
-        */
-        
-        .imgs_resultats_populaires01{
-            border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
-            max-width:100%;
-            height:100px;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        .groupe-text_populaire01{
-        
-            margin-right:30px;
-            padding-left:15px;
-            overflow: hidden;
-        }
-        
-        #imgs01_resultat_populaire{
-            border-radius:0.5vmin 0vmin 0vmin 0.5vmin; /* pour rogner les bords*/
-            max-width:100%;
-            height:90px;
-            object-fit: cover;
-        }
-        
-        .imgs_resultats_populaires02{
-            border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
-            max-width:100%;
-            height:100px;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        .groupe-text_populaire02{
-            max-width:90%;
-            height:110px;
-            margin-right:30px;
-            padding-left:15px;
-            overflow: hidden;
-        }
-        
-        #imgs02_resultat_populaire{
-            border-radius:0.5vmin 0vmin 0vmin 0.5vmin; /* pour rogner les bords*/
-            max-width:100%;
-            height:90px;
-            object-fit: cover;
-        }
-        
-        .imgs_resultats_populaires03{
-            border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
-            max-width:100%;
-            height:100px;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        .groupe-text_populaire03{
-            max-width:90%;
-            height:86px;
-            margin-right:30px;
-            padding-left:15px;
-            overflow: hidden;
-            
-        }
-        
-        #imgs03_resultat_populaire{
-            border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
-            max-width:100%;
-            height:90px;
-            object-fit: cover;
-        }
-        
-        .titre_vignette_resultats_populaires{
-            max-width:200px;
-            height:50px;
-            font-size:0.7em;
-            margin-top:-10px;
-        
-        }
-        
-        .text_resultats_populaires{
-            font-size:0.6em;
-            margin-bottom:30px;
-            margin-top:-25px;
-        
-        }
-        
-        .rating_populaires{
-            font-size:0.5em;
-            margin-top:-5px;
-        
-        }
 
 
 
@@ -1946,175 +1175,14 @@ footer{
         #Activites{
          
         }
-        
-        #Titre_activites{
-            margin-top:40px;
-            margin-bottom:35px;
-            margin-left:50px;
-        }
-        
-        #Groupe_activites{
-            max-width:100%;
-            height:400px;
-            margin-top:30px;
-            margin:auto;
-            display:grid;
-            grid-gap:4em;
-            grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr;
-            grid-template-columns:0.7fr 1fr 1fr 1fr 2fr;
-            grid-template-areas:
-            "sidebar content01 content02 content04 content05"
-            "sidebar content01 content02 content04 content06"
-            "sidebar content01 content03 content04 content06"
-        }
-        
-        #Resultats_activites01{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:350px;
-            grid-area:content01;
-        }
-        
-        #Groupe_activites a:hover{
-            background:#deebff;
-        }
-        
-        #Resultats_activites02{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:180px;
-            grid-area:content02;
-        }
-        
-        #Resultats_activites03{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:115px;
-            grid-area:content03;
-            margin-top:-20px;
-        }
-        
-        #Resultats_activites04{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:350px;
-            grid-area:content04;
-        }
-        
-        #Resultats_activites05{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:130px;
-            grid-area:content05;
-        }
-        
-        #Resultats_activites06{
-            background-color:#ffffff;
-            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-            width:200px;
-            height:160px;
-            grid-area:content06;
-        }
-        
-        .imgs_activites01{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:310px;
-        }
-        
-        .imgs_activites02{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:140px;
-        }
-        
-        .imgs_activites03{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-        
-        }
-        
-        .imgs_activites06{
-            border-radius:1vmin 1vmin 0vmin 0vmin; /* pour rogner les bords*/
-            overflow: hidden;
-            max-width:100%;
-            height:120px;
-        }
-        
-        #imgs01_activites{
-            width:100%;
-            height:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs02_activites{
-            width:100%;
-            height:140px;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs03_activites{
-            width:100%;
-            height:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs04_activites{
-            width:100%;
-            height:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs05_activites{
-            width:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        #imgs06_activites{
-            width:100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-        
-        .titre_activites{
-            font-size:0.6em;
-            font-weight:bold;
-            padding-left:10px;
-        }
+
          
          /************************************************************************/
          /******************************* Footer *********************************/
 
 
          footer{
-            clear:both;
-            background-color:#f2f2f2;
-            display:flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            /*justify-content: space-around;*/
-            /*align-items: center;*/
-            max-width: 100%;
-            height:120px;
+
         }
             
             
