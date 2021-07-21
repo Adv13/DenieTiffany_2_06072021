@@ -90,6 +90,19 @@ p{
     margin-left:20px;
 }
 
+.blue{
+    color:#0065fc;
+}
+
+.grey{
+   color:#c7c7c7;
+}
+
+.black{
+    color:#303030;
+}
+
+
 /*
 #Main{
     width: 100vw; 
@@ -214,7 +227,6 @@ p{
     width: 10px;
     height: 10px;
     margin-right:5px;
-    color:#0065fc;
 }
 
 #Info p{
@@ -222,10 +234,8 @@ p{
     margin-left:2px;
 }
 
-#icon_info{
-    border-radius: 50%;
-    border-width:5px;
-    border-color:#a01c1c;/* à corriger plus tard*/
+.invert{
+    filter : invert(100%);
 }
 
 
@@ -233,7 +243,7 @@ p{
 
 
 #container{
-    max-width:1040px;
+    max-width:990px;
     display:flex;
     justify-content: space-between;
     margin-left:20px;
@@ -273,7 +283,6 @@ p{
 }
 
 .imgs_resultats_recherche{
-     /* pour rogner les bords*/
     overflow: hidden;
 }
 
@@ -350,17 +359,6 @@ p{
     margin-left:7px;
 }
 
-.blue{
-    color:#0065fc;
-}
-
-.grey{
-   color:#c7c7c7;
-}
-
-.black{
-    color:#303030;
-}
 
 #afficherPlus{
     border-radius:1.5vmin 1.5vmin 1.5vmin 1.5vmin;
@@ -529,7 +527,7 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:185px;
-    height:280px;
+    height:285px;
     grid-area:content01;
     overflow: hidden;
 }
@@ -539,7 +537,7 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:185px;
-    height:160px;
+    height:140px;
     grid-area:content02;
     overflow: hidden;
 }
@@ -549,10 +547,10 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:185px;
-    height:90px;
+    height:110px;
     grid-area:content03;
     overflow: hidden;
-    margin-bottom: 55px;
+    margin-bottom: 85px;
 }
 
 #Resultats_activites04{
@@ -560,7 +558,7 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:185px;
-    height:280px;
+    height:285px;
     grid-area:content04;
     overflow: hidden;
 }
@@ -570,7 +568,7 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:185px;
-    height:90px;
+    height:110px;
     grid-area:content05;
     overflow: hidden;
 }
@@ -580,51 +578,89 @@ p{
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:185px;
-    height:160px;
+    height:140px;
     grid-area:content06;
+    overflow: hidden;
+}
+
+#activites01{
+    width:185px;
+    height:255px;
     overflow: hidden;
 }
 
 #imgs01_activites{
     width:185px;
-    height:250px;
+    height:280px;
     object-fit: cover;
 }
 
+#activites02{
+    width:250px;
+    height:110px;
+    overflow: hidden;
+}
+
 #imgs02_activites{
-    width:185px;
-    height:130px;
+    width:190px;
+    height:150px;
     object-fit: cover;
+    
+}
+
+#activites03{
+    width:185px;
+    height:80px;
+    overflow: hidden;
 }
 
 #imgs03_activites{
     width:185px;
-    height:60px;
+    height:120px;
     object-fit: cover;
+}
+
+#activites04{
+    width:185px;
+    height:255px;
+    overflow: hidden;
 }
 
 #imgs04_activites{
     width:185px;
-    height:250px;
+    height:300px;
+    filter: brightness(130%);
     object-fit: cover;
+}
+
+#activites05{
+    width:185px;
+    height:80px;
+    overflow: hidden;
 }
 
 #imgs05_activites{
     width:185px;
-    height:60px;
+    height:120px;
     object-fit: cover;
+}
+
+#activites06{
+    width:185px;
+    height:110px;
+    overflow: hidden;
 }
 
 #imgs06_activites{
     width:185px;
-    height:130px;
+    height:155px;
     object-fit: cover;
 }
 
 .title_activites{
     font-size:0.6em;
     font-weight:bold;
-    margin-top:5px;
+    margin-top:8px;
     padding-left:10px;
 }
 
@@ -692,7 +728,7 @@ footer{
 
 /************************************************************************/       
 /* Small devices (landscape phones, less than 768px)*/
-@media (min-width:50px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
 
     /********************************************************************/
     /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
