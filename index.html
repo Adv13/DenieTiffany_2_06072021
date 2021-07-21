@@ -41,8 +41,8 @@
 
     <body>
 
-        <main id="Main">
-
+        
+        <div id="content">
         <!-- Header -->
         <header>
                 <a href="#"><img src="assets/imgs/logo/Reservia.svg" id="LogoContainer"></a>
@@ -57,7 +57,7 @@
 
 
 
-
+        <main id="Main">
 
         <!-- Section 1 - Recherche -->
         <section id="Recherche">
@@ -86,7 +86,6 @@
                 <div id="icon_info"><i class="fas fa-info"></i></div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
-        </div>
 
 
         <div id="container">
@@ -183,47 +182,53 @@
         <section id="PlusPopulaires">
                 <div id="grp_textPO">
                     <h3 id="titlePO" class="Titres">Les plus populaires</h3>
-                    <i class="fas fa-chart-line black"></i>
+                    <i class="fas fa-chart-line black stats"></i>
                 </div>
              <div id="grp_resultatsPO">
 
-                <a href class="Resultats_Populaires01">
+                <a href class="Resultats_Populaires">
                     <img src="assets/imgs/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" id="imgs01_resultat_populaire">
-                    <h4>Hôtel Le soleil du matin</h4>
-                    <p>Nuit à partir de 128€</p>
+                    <div class="VignettesPO">
+                    <h4 class="title_vignettePO">Hôtel Le soleil du matin</h4>
+                    <p class="text_vignettePO">Nuit à partir de 128€</p>
                     <div class="rating_populaires">
-                        <i class="fas fa-star"></i> 
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star blue"></i> 
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
                     </div>
+                </div>
                 </a>
 
-                <a href class="Resultats_Populaires02">
+                <a href class="Resultats_Populaires">
                     <img src="assets/imgs/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" id="imgs02_resultat_populaire">
-                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                    <p>Nuit à partir de 71€</p>
+                    <div class="VignettesPO">
+                    <h4 class="title_vignettePO">Au coeur de l'eau Chambres d'hôtes</h4>
+                    <p class="text_vignettePO">Nuit à partir de 71€</p>
                     <div class="rating_populaires">
-                        <i class="fas fa-star"></i> 
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star blue"></i> 
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star grey"></i>
                      </div>
+                </div>
                 </a>
 
-                <a href class="Resultats_Populaires03">
+                <a href class="Resultats_Populaires">
                     <img src="assets/imgs/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" id="imgs03_resultat_populaire">
-                    <h4>Hôtel Tout bleu et Blanc</h4>
-                    <p>Nuit à partir de 68€</p>
+                    <div class="VignettesPO">
+                    <h4 class="title_vignettePO">Hôtel Tout bleu et Blanc</h4>
+                    <p class="text_vignettePO">Nuit à partir de 68€</p>
                     <div class="rating_populaires">
-                        <i class="fas fa-star"></i> 
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star blue"></i> 
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star grey"></i>
                     </div>
+                </div>
                 </a>
             </div>
         </section>
@@ -235,51 +240,51 @@
         <!-- Section 6 - Activités de la ville -->
         <section id="Activites">
 
-            <h3 id="titleAC" class="Titres">Activités à Marseille</h3>
+            <h3 id="titleAC">Activités à Marseille</h3>
 
             <div id="grp_activites">
 
                     <a href id="Resultats_activites01">
                         <img src="assets/imgs/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" id="imgs01_activites">
-                        <h4>Vieux Port</h4>
+                        <h4 class="title_activites">Vieux Port</h4>
                     </a>
 
                     <a href id="Resultats_activites02">
                         <img src="assets/imgs/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" id="imgs02_activites">
-                        <h4>Fort de Pomègues</h4>
+                        <h4 class="title_activites">Fort de Pomègues</h4>
                     </a>
 
                     <a href id="Resultats_activites03">
                         <img src="assets/imgs/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" id="imgs03_activites">
-                        <h4>Îles du Frioul</h4>
+                        <h4 class="title_activites">Îles du Frioul</h4>
                     </a>
       
                     <a href id="Resultats_activites04">
                         <img src="assets/imgs/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" id="imgs04_activites">
-                        <h4>Parc National des Calanques</h4>
+                        <h4 class="title_activites">Parc National des Calanques</h4>
                     </a>
                     <a href id="Resultats_activites05">
                         <img src="assets/imgs/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" id="imgs05_activites">
-                        <h4>Notre-Dame-de-la-Garde</h4>
+                        <h4 class="title_activites">Notre-Dame-de-la-Garde</h4>
                     </a>
 
                 
                     <a href id="Resultats_activites06">
                         <img src="assets/imgs/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" id="imgs06_activites">
-                        <h4>Parc Longchamp</h4>
+                        <h4 class="title_activites">Parc Longchamp</h4>
                     </a>
 
             </div>
         </section>
 
 
-
+    </main>
     
 
         <!-- Footer -->
         <footer>
             <div id="A_propos">
-                <h4 id="titre_apropos"><strong>A propos</strong></h4>
+                <h4 class="title_footer"><strong>A propos</strong></h4>
                 <div class="text_footer">
                 <ul>
                    <li><a href="#">Fonctionnement du site</a></li><br>
@@ -290,7 +295,7 @@
             </div>
 
             <div id="Nos_hebergements">
-                <h4 id="titre_hebergement"><strong>Nos hébergements</strong></h4>
+                <h4 class="title_footer"><strong>Nos hébergements</strong></h4>
                 <div class="text_footer">
                 <ul>
                    <li><a href="#">Charte qualité</a></li><br> 
@@ -300,7 +305,7 @@
             </div>
 
             <div id="Assistance">
-                <h4 id="titre_assistance"><strong>Assistance</strong></h4>
+                <h4 class="title_footer"><strong>Assistance</strong></h4>
                 <div class="text_footer">
                 <ul>
                     <li><a href="#">Centre d'aide</a></li><br>
@@ -309,9 +314,7 @@
             </div>
             </div>
         </footer>
-
-    </main>
-
+    </div>
     </body>
 
 </html>
