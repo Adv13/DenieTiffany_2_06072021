@@ -854,9 +854,22 @@ footer{
         }
             
         #Menu li{
-            margin-right:80px;
+            margin-right:50px;
         }
             
+        #hebergement{
+            color:#0065fc;
+            border-width:2px;
+            border-color:#0065fc;
+            border-style:solid;
+            border-right:none;
+            border-top:none;
+            border-left:none;
+            padding-bottom:15px;
+            padding-right:15px;
+            padding-left:15px;
+        }
+
         #Sinscrire{
             position: absolute;
             top:33px;
@@ -952,13 +965,14 @@ footer{
 
         .filtre{
             display:flex;
+            flex-direction:row;
             flex-wrap: wrap;
-            padding-top:5px;
+            padding-top:10px;
         }
         
         #Filtres input{
             background-color:#ffffff;
-            width:180px;
+            width:170px;
             height:49px;
             border-radius:0vmin 7vmin 7vmin 0vmin;
             border:solid;
@@ -1412,6 +1426,7 @@ footer{
             height:300px;
             padding-top:20px;
             margin-left:-20px;
+            margin-top:40px;
         }
         
         #A_propos{
