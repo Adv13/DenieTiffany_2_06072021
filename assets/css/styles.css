@@ -266,9 +266,10 @@ p{
     margin-left:2px;
 }
 
+/*
 .invert{
     filter : invert(100%);
-}
+}*/
 
 
 
@@ -1497,7 +1498,7 @@ footer{
             height:300px;
             padding-top:20px;
             margin-left:-20px;
-            margin-top:40px;
+            margin-top:10px;
         }
         
         #A_propos{
@@ -1533,8 +1534,8 @@ footer{
 }
 
 /************************************************************************/
-/* Medium devices (tablets, less than 992px)*/
-    @media (min-width:768px) and (max-width: 991.98px) {
+/* Medium devices (tablets, less than 892px)*/
+    @media (min-width:768px) and (max-width: 891.98px) {
 
         /********************************************************************/
         /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
@@ -1633,6 +1634,154 @@ footer{
             background-image:url(assets/imgs/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash);
     
             } 
+
+        #resize{
+            width:105px;
+            height:32px;
+        }
+
+        #adapt{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left:20px;
+        }
+
+        #container{
+            max-width:990px;
+            display:flex;
+            flex-direction: column;
+            margin-left:20px;
+            margin-right:20px;
+        }
+
+        #ResultatsDeRecherche{
+            width:700px;
+            height:400px;
+            margin-bottom:20px;
+        }
+
+        #TitleRE{
+            margin-left:20px;
+        }
+        
+        #grp_resultatsRE{
+            margin-left:60px;
+        }
+
+        #afficherPlus{
+            margin-left:70px;
+        }
+
+        #PlusPopulaires{
+            width:700px;
+            height:180px;
+        }
+        
+        #grp_textPO{
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .stats {
+            width: 20px;
+            height: 20px;
+            margin-left:470px;
+        }
+
+        #grp_resultatsPO{
+            width:680px;
+            height:350px;
+            display:flex;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        #Activites{
+            height:370px;
+            margin-left:20px;
+            margin-right:20px;
+        }
+
+        #titleAC{
+            margin-top:30px;
+            margin-left:20px;
+        }
+
+        #grp_activites{
+            max-width:700px;
+            height:400px;
+            margin-top:20px;
+            display:grid;
+            grid-gap:2em;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            "content01 content02 content04 content05"
+            "content01 content02 content04 content06"
+            "content01 content03 content04 content06"
+        }
+
+        #Resultats_activites01{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:150px;
+            height:285px;
+            grid-area:content01;
+            overflow: hidden;
+        }
+
+        #Resultats_activites02{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:150px;
+            height:150px;
+            grid-area:content02;
+            overflow: hidden;
+        }
+
+        #Resultats_activites03{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:150px;
+            height:110px;
+            grid-area:content03;
+            overflow: hidden;
+            margin-bottom: 85px;
+        }
+
+        #Resultats_activites04{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:150px;
+            height:285px;
+            grid-area:content04;
+            overflow: hidden;
+        }
+
+        #Resultats_activites05{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:150px;
+            height:110px;
+            grid-area:content05;
+            overflow: hidden;
+        }
+
+        #Resultats_activites06{
+            background-color:#ffffff;
+            border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+            box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+            width:150px;
+            height:140px;
+            grid-area:content06;
+            overflow: hidden;
+        }
 
 
 }
