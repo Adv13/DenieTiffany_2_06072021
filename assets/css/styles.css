@@ -103,6 +103,7 @@ p{
 }
 
 
+
 /*
 #Main{
     width: 100vw; 
@@ -738,9 +739,13 @@ footer{
     margin-top:-10px;
     margin-left:-10px;
     font-size:0.6em;
+    
 }
 
 
+footer li{
+    line-height: 2em;
+}
 
 /************************************************************************/
 /************************************************************************/
@@ -999,7 +1004,7 @@ footer{
             margin-left:20px;
         }
         
-        #resize{
+        .resize{
             width:105px;
             height:32px;
 
@@ -1635,7 +1640,7 @@ footer{
     
             } 
 
-        #resize{
+        .resize{
             width:105px;
             height:32px;
         }
