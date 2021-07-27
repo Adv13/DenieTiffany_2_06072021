@@ -990,12 +990,6 @@ footer li{
             margin-left:20px;
         }
         
-        #resize{
-            width:105px;
-            height:32px;
-
-        }
-
         .filtre{
             display:flex;
             margin-top:15px;
@@ -1013,7 +1007,13 @@ footer li{
             margin-bottom:10px;
             padding-top:2px;
         }
-        
+
+        .resize{
+            width:105px;
+            height:32px;
+
+        }
+   
         .size{
             margin-top:-4px;
             margin-bottom:20px;
