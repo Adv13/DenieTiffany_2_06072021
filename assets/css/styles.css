@@ -850,6 +850,14 @@ footer li{
         
             } 
 
+
+
+        #Main{
+            max-width: 768px;
+            height:3160px;
+            margin: 0 auto;
+        }
+                    
         .Titres{
             margin-left:20px;
             font-size:1em;
@@ -910,10 +918,11 @@ footer li{
             font-weight: bold;
         }
 
-        #Main{
-            max-width: 1080px;
-            height:3220px;
-            margin: 0 auto;
+
+        .Recherche{
+            margin-left:20px;
+            margin-right:20px;
+            text-align:center;
         }
 
         .SearchButton{
@@ -947,7 +956,7 @@ footer li{
         }
             
         .SearchButton input{
-            width:200px;
+            width:230px;
             color:#000000;
             padding-top:10px;
             padding-bottom:10px;
@@ -973,14 +982,6 @@ footer li{
             padding-top:10px;
             margin-bottom:10px;
             margin-right:20px;
-        }
-        
-        #Filtres div.filtre:hover{
-            background:#deebff;
-        }
-        
-        #Filtres input:hover{
-            background:#deebff;
         }
         
         #adapt{
@@ -1072,11 +1073,16 @@ footer li{
         
         #ResultatsDeRecherche{
             background-color:#ffffff;
-            width:580px;;
+            width:377px;;
             height:1180px;
             overflow: hidden;
             margin-top:20px;
-            margin-left:10px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        #TitleRE{
+            margin-left:40px;
         }
 
         #grp_resultatsRE{
@@ -1090,7 +1096,8 @@ footer li{
             border-radius:4vmin 4vmin 4vmin 4vmin;
             width:300px;
             height:160px;
-            margin-left:20px;
+            margin-left:auto;
+            margin-right:auto;
             margin-top:10px;
             margin-bottom:15px;
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
@@ -1177,7 +1184,7 @@ footer li{
         
         #afficherPlus{
             border-radius:1.5vmin 1.5vmin 1.5vmin 1.5vmin;
-            margin-left:10px;
+            margin-left:40px;
             margin-top:20px;
             padding-top:5px;
             padding-right:8px;
@@ -1192,8 +1199,11 @@ footer li{
         
         #PlusPopulaires{
             background-color:#f2f2f2;
-            width:375px;
+            border-radius: 0vmin 0vmin 0vmin 0vmin;
+            width:377px;
             height:410px;
+            margin-left:auto;
+            margin-right:auto;
             padding-top:20px;
             overflow: hidden;
         }
@@ -1301,21 +1311,23 @@ footer li{
         
         
         #Activites{
-            height:370px;
-            margin-top:10px;
-            margin-left:10px;
+            width:377px;
+            height:350px;
+            margin-left:auto;
+            margin-right:auto;
         }
         
         #titleAC{
             margin-top:50px;
-            margin-left:10px;
+            margin-left:40px;
         }
         
         #grp_activites{
-            max-width:1080px;
-            height:400px;
+            max-width:377px;
+            height:350px;
             margin-top:20px;
-            margin-left:10px;
+            margin-left:auto;
+            margin-right:auto;
             display:grid;
             grid-gap:2em;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1339,6 +1351,8 @@ footer li{
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:300px;
             height:140px;
+            margin-left:auto;
+            margin-right:auto;
             grid-area:content01;
             overflow: hidden;
         }
@@ -1349,6 +1363,8 @@ footer li{
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:300px;
             height:140px;
+            margin-left:auto;
+            margin-right:auto;
             grid-area:content02;
             overflow: hidden;
         }
@@ -1359,6 +1375,8 @@ footer li{
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:300px;
             height:140px;
+            margin-left:auto;
+            margin-right:auto;
             grid-area:content03;
             overflow: hidden;
             margin-bottom: 0px;
@@ -1370,6 +1388,8 @@ footer li{
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:300px;
             height:140px;
+            margin-left:auto;
+            margin-right:auto;
             grid-area:content04;
             overflow: hidden;
         }
@@ -1380,6 +1400,8 @@ footer li{
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:300px;
             height:140px;
+            margin-left:auto;
+            margin-right:auto;
             grid-area:content05;
             overflow: hidden;
         }
@@ -1390,6 +1412,8 @@ footer li{
             box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
             width:300px;
             height:140px;
+            margin-left:auto;
+            margin-right:auto;;
             grid-area:content06;
             overflow: hidden;
         }
@@ -1483,11 +1507,13 @@ footer li{
             background-color:#f2f2f2;
             display:flex;
             flex-direction:column;
-            width: 375px;
+            width:377px;
             height:300px;
             padding-top:20px;
-            margin-left:-20px;
+            padding-right:20px;
             margin-top:10px;
+            margin-left:auto;
+            margin-right:auto;
         }
         
         #A_propos{
@@ -1624,7 +1650,7 @@ footer li{
     
             } 
 
-        #resize{
+        .resize{
             width:105px;
             height:32px;
         }
