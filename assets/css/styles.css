@@ -5,13 +5,13 @@ header{
     
 }
 
-#LogoContainer{
+.LogoContainer{
     padding-bottom:20px;
     margin-top:10px;
     margin-left:20px;
 }
 
-#Menu a:hover{
+.Menu a:hover{
     color: #0065fc;
     border-width:4px;
     border-color:#0065fc;
@@ -22,15 +22,15 @@ header{
     border-left:none;
 }
 
-#Menu ul{
+.Menu ul{
     display: flex;
 }
 
-#Menu li{
+.Menu li{
     margin-right:40px;
 }
 
-#Sinscrire{
+.Sinscrire{
     color:#0065fc;
     font-weight: bold;
 }
@@ -43,15 +43,6 @@ body{
     font-family:'Raleway',sans-serif;
     color:#303030;
 }
-
-/*
-#content{
-    position:fixed;
-    right:2%;
-    left:2%;
-    top:1%;
-    bottom:1%;
-}*/
 
 #Main{
     max-width: 1080px;
@@ -112,27 +103,14 @@ p{
 
 
 
-/*
-#Main{
-    width: 100vw; 
-    height: 95.25vw; /* 100/56.25 = 1.778 mais je veux que ca reste collé en haut
-    background:transparent;
-    max-height: 100vh;
-    max-width: 177.78vh; /* 16/9 = 1.778
-    margin: auto;
-    position: absolute;
-    top:0;bottom:0; /*vertical center 
-    left:0;right:0; /* horizontal center
-}*/
 
 
-
-#Recherche{
+.Recherche{
     margin-left:20px;
     margin-right:20px;
 }
 
-#SearchButton{
+.SearchButton{
     display:flex;
 }
 
@@ -158,7 +136,7 @@ p{
     border:none;
 }
 
-#SearchButton input{
+.SearchButton input{
     padding-top:10px;
     padding-bottom:10px;
     padding-left:10px;
@@ -255,7 +233,7 @@ p{
 
 
 
-#Info{
+.Info{
     display:flex;
     font-size:0.8em;
     color:#404040;
@@ -264,13 +242,13 @@ p{
     margin-right:20px;
 }
 
-#Info i{
+.Info i{
     width: 10px;
     height: 10px;
     margin-right:5px;
 }
 
-#Info p{
+.Info p{
     margin-top: 1px;
     margin-left:2px;
 }
@@ -889,13 +867,13 @@ footer li{
             margin-bottom:30px;
         }
             
-        #LogoContainer{
+        .LogoContainer{
             padding-bottom:20px;
             margin-top:10px;
             margin-left:20px;
         }
             
-        #Menu li{
+        .Menu li{
             margin-right:90px;
             margin-left:-10px;
         }
@@ -938,7 +916,7 @@ footer li{
             margin: 0 auto;
         }
 
-        #SearchButton{
+        .SearchButton{
             display:flex;
             justify-content: center;
          }
@@ -968,7 +946,7 @@ footer li{
             border:none;
         }
             
-        #SearchButton input{
+        .SearchButton input{
             width:200px;
             color:#000000;
             padding-top:10px;
@@ -1012,7 +990,7 @@ footer li{
             margin-left:20px;
         }
         
-        .resize{
+        #resize{
             width:105px;
             height:32px;
 
@@ -1424,7 +1402,7 @@ footer li{
         
         #imgs01_activites{
             width:300px;
-            height:100px;
+            height:150px;
             object-fit: cover;
         }
         
@@ -1436,7 +1414,7 @@ footer li{
         
         #imgs02_activites{
             width:300px;
-            height:100px;
+            height:120px;
             object-fit: cover;
             
         }
@@ -1449,7 +1427,7 @@ footer li{
         
         #imgs03_activites{
             width:300px;
-            height:100px;
+            height:130px;
             object-fit: cover;
         }
         
@@ -1461,7 +1439,7 @@ footer li{
         
         #imgs04_activites{
             width:300px;
-            height:100px;
+            height:140px;
             filter: brightness(130%);
             object-fit: cover;
         }
@@ -1474,7 +1452,7 @@ footer li{
         
         #imgs05_activites{
             width:300px;
-            height:100px;
+            height:150px;
             object-fit: cover;
         }
         
@@ -1486,7 +1464,7 @@ footer li{
         
         #imgs06_activites{
             width:300px;
-            height:100px;
+            height:150px;
             object-fit: cover;
         }
         
@@ -1496,8 +1474,6 @@ footer li{
             margin-top:15px;
             padding-left:10px;
         }
-        
-        
         
         
         
@@ -1648,7 +1624,7 @@ footer li{
     
             } 
 
-        .resize{
+        #resize{
             width:105px;
             height:32px;
         }
