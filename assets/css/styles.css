@@ -165,11 +165,9 @@ p{
 }
 
 #Filtres div.filtre:hover{
-    background:#deebff;
-}
-
-#Filtres input:hover{
-    background:#deebff;
+    transform: scale(1);
+    transition: transform 400ms;
+    transform: scale(1.10);
 }
 
 #adapt{
