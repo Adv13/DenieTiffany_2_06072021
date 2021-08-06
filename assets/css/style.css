@@ -559,5 +559,299 @@ footer h4{
     margin-top:20px;
     margin-left:0px;
     margin-right:170px;
+}
 
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/***************************** MEDIAS QUERIES ***************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/* X-Small devices (portrait phones, less than 576px)*/
+    /*@media (max-width: 575.98px) {*/
+    @media (max-width: 575.98px) {
+    /********************************************************************/
+    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
+    /* Images partie Hébergement Photo 01*/
+    .imgs01_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash);
+        }
+    /* Images partie Hébergement Photo 02*/
+    .imgs02_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash);
+        }
+    /* Images partie Hébergement Photo 03*/
+    .imgs03_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash);
+        }
+    /* Images partie Hébergement Photo 04*/
+        .imgs04_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash);
+        }
+    /* Images partie Hébergement Photo 05*/
+        .imgs05_resultat_recherche{
+            background-image:url(assets/imgs/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash);
+        }
+    /* Images partie Hébergement Photo 06*/
+    .imgs06_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash);
+        }
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS POPULAIRES *****************/
+    /* Images partie Populaire Photo 01*/
+    .imgs01_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash);
+        }
+    /* Images partie Populaire Photo 02*/
+    .imgs02_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash);
+        }
+    /* Images partie Populaire Photo 03*/
+    .imgs03_resultat_populaire{
+    background-image:url(assets/imgs/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash); 
+    }
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS ACTIVITES ******************/
+    /* Images partie Activites Photo 01*/
+    .imgs01_activites{
+        background-image:url(assets/imgs/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash);   
+        }
+    /* Images partie Activites Photo 02*/
+    .imgs02_activites{
+        background-image:url(assets/imgs/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash);   
+        }      
+    /* Images partie Activites Photo 03*/
+    .imgs03_activites{
+        background-image:url(assets/imgs/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash);  
+        }
+    /* Images partie Activites Photo 04*/
+    .imgs04_activites{
+        background-image:url(assets/imgs/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash);    
+        }
+    /* Images partie Activites Photo 05*/
+    .imgs05_activites{
+        background-image:url(assets/imgs/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash);  
+        }    
+    /* Images partie Activites Photo 06*/
+    .imgs06_activites{
+        background-image:url(assets/imgs/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash);   
+        } 
+    }          
+/************************************************************************/ 
+/************************************************************************/       
+/* Small devices (landscape phones, less than 768px)*/
+@media (min-width:400px) and (max-width: 767.98px) {
+    /********************************************************************/
+    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
+    /* Images partie Hébergement Photo 01*/
+    .imgs01_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash);
+        }
+    /* Images partie Hébergement Photo 02*/
+    .imgs02_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash);
+        }
+    /* Images partie Hébergement Photo 03*/
+    .imgs03_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash);
+        }
+    /* Images partie Hébergement Photo 04*/
+    .imgs04_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash);
+        }
+    /* Images partie Hébergement Photo 05*/
+    .imgs05_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash);
+        }
+    /* Images partie Hébergement Photo 06*/
+    .imgs06_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash);
+        }
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS POPULAIRES *****************/
+    /* Images partie Populaire Photo 01*/
+    .imgs01_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash);
+        }
+    /* Images partie Populaire Photo 02*/
+    .imgs02_resultat_populaire{
+    background-image:url(assets/imgs/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash);
+        }
+    /* Images partie Populaire Photo 03*/
+    .imgs03_resultat_populaire{
+    background-image:url(assets/imgs/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash);
+        }
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS ACTIVITES ******************/
+    /* Images partie Activites Photo 01*/
+    .imgs01_activites{
+        background-image:url(assets/imgs/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash);
+        }
+    /* Images partie Activites Photo 02*/
+    .imgs02_activites{
+        background-image:url(assets/imgs/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash);
+        }
+    /* Images partie Activites Photo 03*/
+    .imgs03_activites{
+        background-image:url(assets/imgs/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash);
+        }
+    /* Images partie Activites Photo 04*/
+    .imgs04_activites{
+        background-image:url(assets/imgs/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash);
+        }
+    /* Images partie Activites Photo 05*/
+    .imgs05_activites{
+        background-image:url(assets/imgs/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash);
+        }    
+    /* Images partie Activites Photo 06*/
+    .imgs06_activites{
+        background-image:url(assets/imgs/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash);
+        } 
+    }
+/************************************************************************/    
+/************************************************************************/
+/* Medium devices (tablets, less than 892px)*/
+@media (min-width:768px) and (max-width: 891.98px) {
+    /********************************************************************/
+    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
+    /* Images partie Hébergement Photo 01*/
+    .imgs01_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash);
+        }
+    /* Images partie Hébergement Photo 02*/
+    .imgs02_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash);
+        }
+    /* Images partie Hébergement Photo 03*/
+    .imgs03_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash);
+        }
+    /* Images partie Hébergement Photo 04*/
+    .imgs04_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash);
+        }
+    /* Images partie Hébergement Photo 05*/
+    .imgs05_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash);
+        }
+    /* Images partie Hébergement Photo 06*/
+    .imgs06_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash);
+        }
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS POPULAIRES *****************/
+    /* Images partie Populaire Photo 01*/
+    .imgs01_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash);
+        }
+    /* Images partie Populaire Photo 02*/
+    .imgs02_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash);
+        }
+    /* Images partie Populaire Photo 03*/
+    .imgs03_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash);
+        }        
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS ACTIVITES ******************/
+    /* Images partie Activites Photo 01*/
+    .imgs01_activites{
+        background-image:url(assets/imgs/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash);
+        }
+    /* Images partie Activites Photo 02*/
+    .imgs02_activites{
+        background-image:url(assets/imgs/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash);
+        }
+    /* Images partie Activites Photo 03*/
+    .imgs03_activites{
+        background-image:url(assets/imgs/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash);
+        }
+    /* Images partie Activites Photo 04*/
+    .imgs04_activites{
+        background-image:url(assets/imgs/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash);
+        }
+    /* Images partie Activites Photo 05*/
+     .imgs05_activites{
+        background-image:url(assets/imgs/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash);
+        }    
+    /* Images partie Activites Photo 06*/
+    .imgs06_activites{
+        background-image:url(assets/imgs/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash);
+        } 
+    }
+
+
+/************************************************************************/    
+/************************************************************************/
+/* X-Large devices (large desktops, less than 2400px)*/
+@media (min-width:1599.98px) and (max-width: 2399.98px) {
+    /********************************************************************/
+    /*************** IMAGES PARTIE RECHERCHE HEBERGEMENT ****************/
+    /* Images partie Hébergement Photo 01*/
+    .imgs01_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash);
+        }
+    /* Images partie Hébergement Photo 02*/
+    .imgs02_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash);
+        }
+    /* Images partie Hébergement Photo 03*/
+    .imgs03_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash);
+        }
+    /* Images partie Hébergement Photo 04*/
+    .imgs04_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash);
+        }
+    /* Images partie Hébergement Photo 05*/
+    .imgs05_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash);
+        }
+    /* Images partie Hébergement Photo 06*/
+    .imgs06_resultat_recherche{
+        background-image:url(assets/imgs/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash);
+        }
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS POPULAIRES *****************/
+    /* Images partie Populaire Photo 01*/
+    .imgs01_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash);
+        }
+    /* Images partie Populaire Photo 02*/
+    .imgs02_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash);
+        }
+    /* Images partie Populaire Photo 03*/
+    .imgs03_resultat_populaire{
+        background-image:url(assets/imgs/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash);
+    }
+    /********************************************************************/
+    /*************** IMAGES PARTIE RESULTATS ACTIVITES ******************/
+    /* Images partie Activites Photo 01*/
+    .imgs01_activites{
+        background-image:url(assets/imgs/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash);
+        }
+    /* Images partie Activites Photo 02*/
+    .imgs02_activites{
+        background-image:url(assets/imgs/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash);
+        }
+    /* Images partie Activites Photo 03*/
+    .imgs03_activites{
+        background-image:url(assets/imgs/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash);
+        }
+    /* Images partie Activites Photo 04*/
+    .imgs04_activites{
+        background-image:url(assets/imgs/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash);
+        }
+    /* Images partie Activites Photo 05*/
+     .imgs05_activites{
+        background-image:url(assets/imgs/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash);
+        }    
+    /* Images partie Activites Photo 06*/
+    .imgs06_activites{
+        background-image:url(assets/imgs/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash);
+        }  
 }
