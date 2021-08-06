@@ -1,7 +1,12 @@
+/*********************** GENERAL RULES **************************/
+
 body{
+    font-family:'Raleway',sans-serif;
+    color:#303030;
+    margin: 10 auto;
     display:grid;
     grid-gap:1em;
-    grid-template-rows: 0.1fr 0.25fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.02fr 0.15fr 1.2fr 0.5fr 0.2fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "header header header"
@@ -9,6 +14,75 @@ body{
     "main main sidebar"
     "section section section"
     "footer footer footer"
+    
+}
+
+a:link { 
+    text-decoration:none; 
+    color:#303030;
+} 
+
+a:visited{
+    color:#303030;
+}
+
+ul{
+    list-style-type:none;
+}
+
+h2{
+    font-weight:bold;
+    font-size:1.4em;
+}
+
+h3{
+    font-size:1.2em;
+    font-weight:bold;;
+}
+
+h6{
+    font-size:1em;
+    color:#404040;
+    margin-top:0px;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:0.8em;
+    color:#404040;
+}
+
+.blue{
+    color:#0065fc;
+}
+
+.grey{
+   color:#c7c7c7;
+}
+
+.black{
+    color:#303030;
+}
+
+
+.title_vignette{
+    font-size:0.9em;
+    margin-top:8px;
+    margin-left:5px;
+}
+
+.text_vignette{
+    font-size:0.8em;
+    margin-top:-10px;
+    margin-left:5px;
+}
+
+.rating{
+    font-size:0.8em;
+    margin-top:-4px;
+    margin-bottom:4px;
+    margin-left:7px;
 }
 
 img{
@@ -16,26 +90,474 @@ img{
     height:100px;
 }
 
+/**************************** HEADER **********************/
+
 header{
+    display:flex;
+    justify-content: space-between;
     grid-area:header;
 }
 
+header img{
+    width:100px;
+    height:50px;
+}
+
+.LogoContainer{
+    margin-left:20px;
+}
+
+nav a:hover{
+    color: #0065fc;
+    border-width:4px;
+    border-color:#0065fc;
+    border-style:solid;
+    padding-top:20px;
+    border-right:none;
+    border-bottom:none;
+    border-left:none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    margin-right:30px;
+}
+
+#Sinscrire{
+    color:#0065fc;
+    font-weight: bold;
+}
+
+
+/**************************** RESEARCH **************************/
+
 .research{
+    margin-left:20px;
+    margin-right:30px;
     grid-area:subhead;
 }
 
+
+
+.research h2{
+    margin-bottom:-5px;
+}
+
+.search{
+    display:flex;
+    margin-bottom:10px;
+}
+
+.icon{
+    background-color:#f2f2f2;
+    width:10px;
+    height:19px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-bottom:10px;
+    padding-left:15px;
+    border-radius:1.5vmin 0vmin 0vmin 1.5vmin;
+}
+
+.research form input{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    border-color:#f2f2f2; /* à corriger plus tard*/
+    border-width:0.2px; /* à corriger plus tard*/
+    font-weight:bold;
+}
+
+.research form button{
+    background-color: #0065fc;
+    color:#ffffff;
+    width:120px;
+    height:38px;
+    margin-left:-10px;
+    font-weight: bold;
+    border-radius:0vmin 1.5vmin 1.5vmin 0vmin;
+    border:none;
+}
+
+.hidden-sm{
+    visibility: visible;
+}
+
+.visible-sm{
+    visibility: hidden;
+}
+
+.filtres{
+    display:flex;
+}
+
+.filtres02{
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+}
+
+.filtres div.filtres02 div:hover{
+    transform: scale(1);
+    transition: transform 400ms;
+    transform: scale(1.10);
+}
+
+.filtres03{
+    display:flex;
+    width:175px;
+    height:35px;
+    background-color:#ffffff;
+    border-radius:7vmin 7vmin 7vmin 7vmin;
+    border:solid;
+    border-width:2px;
+    border-color:#d6d6d6;
+    margin-left:20px;
+    margin-bottom:10px;
+}
+
+.filtres div.filtres02 i{
+    border-radius: 50%;/* à corriger plus tard si besoin*/
+    border-width:10px;/* à corriger plus tard si besoin*/
+    background:#deebff;
+    width:40px;
+    position:relative;
+    text-align:center;
+    line-height:2; 
+}
+
+.filtres div.filtres02 input{
+    background-color:#ffffff;
+    border-radius:7vmin 7vmin 7vmin 7vmin;
+    border:none;
+    height:35px;
+    text-align: center;
+    font-weight: bold;
+    padding-left:10px;
+}
+
+.info{
+    display:flex;
+    font-size:0.9em;
+    margin-top:10px;
+}
+
+#info{
+    color:#8b8b8b;
+}
+
+/**************************** MAIN PARTIE *************************/
+
 main{
+    background-color:#f2f2f2;
+    border-radius:2vmin 2vmin 2vmin 2vmin;
+    margin:20px;
+    padding:10px;
+    overflow: hidden;
     grid-area:main;
 }
 
+.result{
+    display:inline-block;
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:185px;
+    height:180px;
+    margin:20px;
+}
+
+main a:hover{
+    background-color:#deebff
+}
+
+main h3{
+    margin-left:20px;
+    margin-bottom:0px;
+}
+
+main img{
+    width:176px;
+    height:90px;
+    border-radius:1vmin 1vmin 0vmin 0vmin;
+    padding-left:4px;
+    padding-top:4px;
+    object-fit: cover;
+}
+
+.AfficherPlus{
+    font-weight:bold;
+    border-radius:0.5vmin 0.5vmin 0.5vmin 0.5vmin;
+    margin-left:20px;
+    padding:5px;
+}
+
+/**************************** SIDEBAR *****************************/
+
 aside{
+    background-color:#f2f2f2;
+    border-radius:2vmin 2vmin 2vmin 2vmin;
+    margin:20px;
+    padding:10px;
     grid-area:sidebar;
 }
 
+aside a:hover{
+    background:#deebff;
+}
+
+.title_icon{
+    display:flex;
+    justify-content: space-between;
+}
+
+aside h3{
+    margin-left:20px;
+}
+
+#icon01{
+    margin-top:20px;
+    margin-right:20px;
+}
+
+.results{
+    display:flex;
+    flex-direction: column;
+    margin-top:-40px;
+}
+
+.result_sidebar{
+    display:flex;
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:300px;
+    height:120px;
+    margin-top:40px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.result_sidebar a:hover{
+    background-color:#deebff
+}
+
+aside img{
+    border-radius:1vmin 0vmin 0vmin 1vmin; /* pour rogner les bords*/
+    width:120px;
+    height:112px;
+    padding-top:4px;
+    padding-left:4px;
+    margin-right:10px;
+    object-fit: cover;
+}
+
+.rating_sidebar{
+    font-size:0.7em;
+    margin-top:30px;
+    margin-bottom:4px;
+    margin-left:7px;
+}
+
+/**************************** SECTION BAS *************************/
+
 section{
+    margin:0 auto;
     grid-area:section;
 }
 
+section h3{
+    margin-left:20px;
+}
+section h4{
+    margin-left:15px;
+    margin-top:5px;
+}
+
+.grp_activites{
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:40px;
+    display:grid;
+    grid-gap:2.5em;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "content01 content02 content04 content05"
+    "content01 content02 content04 content06"
+    "content01 content03 content04 content06"
+}
+
+section#Activites a:hover{
+    background:#deebff;
+}
+
+#Resultats_activites01{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:250px;
+    height:400px;
+    grid-area:content01;
+    overflow: hidden;
+}
+
+#Resultats_activites02{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:250px;
+    height:200px;
+    grid-area:content02;
+    overflow: hidden;
+}
+
+#Resultats_activites03{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:250px;
+    height:145px;
+    grid-area:content03;
+    overflow: hidden;
+    margin-top:-140px;
+}
+
+#Resultats_activites04{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:250px;
+    height:400px;
+    grid-area:content04;
+    overflow: hidden;
+}
+
+#Resultats_activites05{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:250px;
+    height:160px;
+    grid-area:content05;
+    overflow: hidden;
+    margin-bottom:40px;
+}
+
+#Resultats_activites06{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    width:250px;
+    height:190px;
+    grid-area:content06;
+    overflow: hidden;
+    margin-top:-30px;
+}
+
+#activites01{
+    width:250px;
+    height:350px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+#imgs01_activites{
+    width:250px;
+    height:350px;
+    object-fit: cover;
+}
+
+#activites02{
+    width:250px;
+    height:150px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+#imgs02_activites{
+    width:250px;
+    height:200px;
+    object-fit: cover;
+    
+}
+
+#activites03{
+    width:250px;
+    height:95px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+#imgs03_activites{
+    width:250px;
+    height:140px;
+    object-fit: cover;
+}
+
+#activites04{
+    width:250px;
+    height:350px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+#imgs04_activites{
+    width:250px;
+    height:350px;
+    filter: brightness(130%);
+    object-fit: cover;
+}
+
+#activites05{
+    width:250px;
+    height:115px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+#imgs05_activites{
+    width:250px;
+    height:160px;
+    object-fit: cover;
+}
+
+#activites06{
+    width:250px;
+    height:140px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+#imgs06_activites{
+    width:250px;
+    height:200px;
+    object-fit: cover;
+}
+
+/***************************** FOOTER ****************************/
+
 footer{
+    background-color:#f2f2f2;
+    display:flex;
+    padding-bottom:20px;
     grid-area:footer;
+}
+
+footer li{
+    line-height: 2em;
+}
+
+footer h4{
+    margin-left:40px;
+}
+
+.footerLinks{
+    margin-top:20px;
+    margin-left:0px;
+    margin-right:170px;
+
 }
