@@ -523,82 +523,55 @@ p{
 }
 
 #grp_activites{
-    max-width:1080px;
-    height:400px;
-    margin-top:20px;
-    display:grid;
-    grid-gap:2em;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "content01 content02 content04 content05"
-    "content01 content02 content04 content06"
-    "content01 content03 content04 content06"
+    display:flex;
+    flex-wrap: wrap;
 }
 
 #grp_activites a:hover{
     background:#deebff;
 }
 
-#Resultats_activites01{
+.activites0203{
+    
+}
+
+.activites0506{
+    display:flex;
+    flex-direction:column;
+}
+
+.Resultats{
     background-color:#ffffff;
     border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:185px;
-    height:285px;
-    grid-area:content01;
     overflow: hidden;
+}
+
+#Resultats_activites01{
+    height:285px;
 }
 
 #Resultats_activites02{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    width:185px;
+    display:block;
     height:140px;
-    grid-area:content02;
-    overflow: hidden;
 }
 
 #Resultats_activites03{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    width:185px;
+    display:block;
     height:110px;
-    grid-area:content03;
-    overflow: hidden;
-    margin-bottom: 85px;
 }
 
 #Resultats_activites04{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    width:185px;
     height:285px;
-    grid-area:content04;
-    overflow: hidden;
 }
 
 #Resultats_activites05{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    width:185px;
     height:110px;
-    grid-area:content05;
-    overflow: hidden;
 }
 
 #Resultats_activites06{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    width:185px;
     height:140px;
-    grid-area:content06;
-    overflow: hidden;
 }
 
 #activites01{
@@ -1319,7 +1292,7 @@ footer li{
                 margin-top:50px;
                 margin-left:30px;
             }
-            
+            /*
             #grp_activites{
                 max-width:377px;
                 height:350px;
@@ -1337,7 +1310,7 @@ footer li{
                 "content04"
                 "content05"
                 "content06"
-            }
+            }*/
             
             #grp_activites a:hover{
                 background:#deebff;
@@ -2112,7 +2085,7 @@ footer li{
             margin-top:50px;
             margin-left:30px;
         }
-        
+        /*
         #grp_activites{
             max-width:377px;
             height:350px;
@@ -2128,7 +2101,7 @@ footer li{
             "content03 content04"
             "content05 content06"
 
-        }
+        }*/
         
         #Resultats_activites01{
             background-color:#ffffff;
@@ -2507,7 +2480,7 @@ footer li{
             margin-top:30px;
             margin-left:20px;
         }
-
+        /*
         #grp_activites{
             max-width:700px;
             height:400px;
@@ -2520,7 +2493,7 @@ footer li{
             "content01 content02 content04 content05"
             "content01 content02 content04 content06"
             "content01 content03 content04 content06"
-        }
+        }*/
 
         #Resultats_activites01{
             background-color:#ffffff;

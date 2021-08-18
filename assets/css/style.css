@@ -258,7 +258,7 @@ main{
     background-color:#ffffff;
     border-radius:2vmin 2vmin 2vmin 2vmin;
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    width:185px;
+    width:195px;
     height:180px;
     margin:20px;
 }
@@ -273,7 +273,7 @@ main h3{
 }
 
 main img{
-    width:176px;
+    width:186px;
     height:90px;
     border-radius:2vmin 2vmin 0vmin 0vmin;
     padding-left:4px;
@@ -371,17 +371,30 @@ section h4{
 }
 
 .grp_activites{
-    margin-left:20px;
-    margin-right:20px;
-    margin-bottom:40px;
-    display:grid;
-    grid-gap:2.5em;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "content01 content02 content04 content05"
-    "content01 content02 content04 content06"
-    "content01 content03 content04 content06"
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:10px;
+}
+
+.activites0203{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.activites0506{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.Resultats{
+    background-color:#ffffff;
+    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    margin:10px;
+    overflow: hidden;
 }
 
 section#Activites a:hover{
@@ -389,66 +402,33 @@ section#Activites a:hover{
 }
 
 #Resultats_activites01{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:250px;
     height:400px;
-    grid-area:content01;
-    overflow: hidden;
 }
 
 #Resultats_activites02{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:250px;
     height:200px;
-    grid-area:content02;
-    overflow: hidden;
 }
 
 #Resultats_activites03{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:250px;
     height:145px;
-    grid-area:content03;
-    overflow: hidden;
-    margin-top:-140px;
 }
 
 #Resultats_activites04{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:250px;
     height:400px;
-    grid-area:content04;
-    overflow: hidden;
 }
 
 #Resultats_activites05{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:250px;
     height:160px;
-    grid-area:content05;
-    overflow: hidden;
-    margin-bottom:40px;
 }
 
 #Resultats_activites06{
-    background-color:#ffffff;
-    border-radius:1vmin 1vmin 1vmin 1vmin; /* pour rogner les bords*/
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     width:250px;
     height:190px;
-    grid-area:content06;
-    overflow: hidden;
-    margin-top:-30px;
 }
 
 #activites01{
@@ -832,22 +812,18 @@ footer h4{
     section{
         margin:10px;
     }
+
     .grp_activites{
-        margin-left:20px;
-        margin-right:20px;
-        margin-bottom:40px;
-        display:grid;
-        grid-gap:2em;
-        /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "content01"
-        "content02"
-        "content03"
-        "content04"
-        "content05"
-        "content06"
+        display:flex;
+        flex-direction: column;
+        margin:10px;
     }
+    
+    .Resultats{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
     #Resultats_activites01{
         width:290px;
         height:150px;
@@ -859,7 +835,6 @@ footer h4{
     #Resultats_activites03{
         width:290px;
         height:150px;
-        margin-top:0px;
     }
     #Resultats_activites04{
         width:290px;
@@ -872,7 +847,6 @@ footer h4{
     #Resultats_activites06{
         width:290px;
         height:150px;
-        margin-top:-30px;
     }
     #activites01{
         width:290px;
@@ -999,6 +973,83 @@ footer h4{
     .imgs06_activites{
         background-image:url(assets/imgs/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash);
         } 
+    body{
+        font-family:'Raleway',sans-serif;
+        color:#303030;
+        margin: 0 auto;
+        display:grid;
+        grid-gap:1em;
+        grid-template-rows: 0.02fr 0.15fr 0.3fr 1fr 0.5fr 0.2fr;
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "header"
+        "subhead"
+        "sidebar"
+        "main"
+        "section"
+        "footer"
+        }
+    .results{
+        display:flex;
+        flex-direction:row;
+    }
+/********************* SECTION EN BAS **************************/
+#Resultats_activites01{
+    width:220px;
+}
+#Resultats_activites02{
+    width:220px;
+}
+#Resultats_activites03{
+    width:220px;
+}
+#Resultats_activites04{
+    width:220px;
+}
+#Resultats_activites05{
+    width:220px;
+}
+#Resultats_activites06{
+    width:220px;
+}
+#activites01{
+    width:220px;
+}
+#activites02{
+    width:220px;
+}
+#activites03{
+    width:220px;
+}
+#activites04{
+    width:220px;
+}
+#activites05{
+    width:220px;
+}
+#activites06{
+    width:220px;
+}
+#imgs01_activites{
+    width:220px;
+}
+#imgs02_activites{
+    width:220px;
+}
+#imgs03_activites{
+    width:220px;
+}
+#imgs04_activites{
+    width:220px;
+}
+#imgs05_activites{
+    width:220px;
+}
+#imgs06_activites{
+    width:220px;
+}
+
+
     }
 /************************************************************************/    
 /************************************************************************/
@@ -1076,7 +1127,7 @@ footer h4{
     margin: 10 auto;
     display:grid;
     grid-gap:1em;
-    grid-template-rows: 0.02fr 0.15fr 1.1fr 0.5fr 0.5fr 0.2fr;
+    grid-template-rows: 0.02fr 0.15fr 0.9fr 0.3fr 0.5fr 0.2fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "header header header"
@@ -1087,10 +1138,17 @@ footer h4{
     "footer footer footer"
     }
 /************************* FILTRES *****************************/
-.filtres02{
-    display:flex;
-    flex-wrap: wrap;
-}
+    .filtres02{
+        display:flex;
+        flex-wrap: wrap;
+    }
+/************************* MAIN ********************************/
+    .result{
+        width:295px;
+    }
+    main img{
+        width:286px;
+    }
 /************************* SIDEBAR *****************************/
     .results{
         display:flex;
@@ -1127,87 +1185,64 @@ footer h4{
         font-size:0.6em;
     }
 /********************* SECTION EN BAS **************************/
-    .grp_activites{
-        grid-gap:1.2em;
-    }
     #Resultats_activites01{
-        width:160px;
-        height:418px;
+        width:320px;
     }
     #Resultats_activites02{
-        width:160px;
-        height:220px;
+        width:320px;
     }
     #Resultats_activites03{
-        width:160px;
-        height:185px;
-        margin-top:-120px;
+        width:320px;
     }
     #Resultats_activites04{
-        width:160px;
-        height:418px;
+        width:320px;
     }
     #Resultats_activites05{
-        width:160px;
-        height:170px;
+        width:320px;
     }
     #Resultats_activites06{
-        width:160px;
-        height:235px;
-        margin-top:-50px;
+        width:320px;
     }
     #activites01{
-        width:160px;
-        height:350px;
-    }
-    #imgs01_activites{
-        width:160px;
-        height:350px;
+        width:320px;
     }
     #activites02{
-        width:160px;
-        height:150px;
-    }
-    #imgs02_activites{
-        width:160px;
-        height:200px; 
+        width:320px;
     }
     #activites03{
-        width:160px;
-        height:115px;
-    }
-    #imgs03_activites{
-        width:160px;
-        height:140px;
+        width:320px;
     }
     #activites04{
-        width:160px;
-        height:350px;
-    }
-    #imgs04_activites{
-        width:160px;
-        height:350px;
+        width:320px;
     }
     #activites05{
-        width:160px;
-        height:115px;
-    }
-    #imgs05_activites{
-        width:160px;
-        height:160px;
+        width:320px;
     }
     #activites06{
-        width:160px;
-        height:165px;
+        width:320px;
+    }
+    #imgs01_activites{
+        width:320px;
+    }
+    #imgs02_activites{
+        width:320px;
+    }
+    #imgs03_activites{
+        width:320px;
+    }
+    #imgs04_activites{
+        width:320px;
+    }
+    #imgs05_activites{
+        width:320px;
     }
     #imgs06_activites{
-        width:160px;
-        height:200px;
+        width:320px;
     }
 /***************************** FOOTER ************************/
-.footerLinks{
-    margin-right:130px;
-}
+    .footerLinks{
+        margin-right:130px;
+    }
 /************************************************************************/    
 /************************************************************************/
 /* X-Large devices (large desktops, less than 2400px)*/
